@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Lien booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+    
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+    
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="../header-footer/header.css">
+    <link rel="stylesheet" href="../header-footer/footer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="formateur.css">
+</head>
+<body>
+    <!-- section header -->
+ <header class="" id="header" class="">
+    <div class="header-top d-flex justify-content-between py-2">
+        <div class="section-left d-flex">
+            <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+            <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+            <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+            <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+        </div>
+        <div class="section-right d-flex gap-2 align-items-center gap-4">
+            <div class="search-part">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                            class="fa-solid fa-magnifying-glass"></i></label>
+                </form>
+            </div>
+            <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="lang d-flex gap-2">
+                <span>EN</span>
+                <span>FR</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+        <div class="logo">
+            <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+        </div>
+        <div class="menu d-flex">
+            <div class="nav-menu d-flex" id="nav-menu">
+                <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                <div class="nav-lit dropdown me-1">
+                    <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        A Propos
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                        <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                        <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                de fabriques</a></li>
+                        <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                pour un numérique inclusif</a></li>
+                        <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Nos Formations
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                cybersécurité</a></li>
+                        <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                d'applications</a></li>
+                        <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                numériques</a></li>
+                        <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                        <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                        <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Alternances
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                en alternance</a></li>
+                        <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Candidats
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                pour les femmes</a></li>
+                        <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                situation de handicap</a></li>
+                        <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                refugés étrangers</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Entreprises
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                salariés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hide-menu" id="hide-menu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <div class="search-mobile" id="search-mobile">
+        <form action="">
+            <input type="text" placeholder="Entrez votre texte">
+            <input type="submit" value="Rechercher">
+        </form>
+    </div>
+    <script>
+        let navMenu = document.getElementById('nav-menu');
+        let burgerMenu = document.getElementById('burger-menu');
+        let hideMenu = document.getElementById('hide-menu');
+
+        hideMenu.style.display = 'none'
+
+        burgerMenu.addEventListener('click', function () {
+            navMenu.style.left = '0';
+            hideMenu.style.display = 'block';
+            burgerMenu.style.display = 'none';
+        });
+        hideMenu.addEventListener('click', function () {
+            navMenu.style.left = '200%';
+            hideMenu.style.display = 'none';
+            burgerMenu.style.display = 'block';
+        })
+
+        let searchMobile = document.getElementById('search-alternate');
+        let barreSearch = document.getElementById('search-mobile');
+
+        searchMobile.addEventListener('click', function () {
+            barreSearch.style.top = '40vh';
+        });
+    </script>
+
+</header>
+    <!-- <header class="" id="header">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">
+                        Accueil
+                    </a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="#">Notre réseau de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="#">Développement d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a></li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="#">Personnes en situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="#">Nos actions pour les refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Former ses salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+     -->
+    
+    
+    <!-- end header -->
+   
+
+    <!-- section main -->
+        <main>
+            <section class="row banner">
+                <div class="col-12 col-sm-12 border">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://img.freepik.com/photos-gratuite/groupe-multiethnique-jeunes-hommes-femmes-etudiant-interieur_1139-989.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=sph" class="d-block w-100" alt="...">
+                                <div class="carousel-caption  d-md-block">
+                                    <h4 style="font-size: 50px;">Formateur/Formatrice chez Simplon.co</h4>
+                                    <p>C'est allier la technique et la transmission de vos compétences en proposant aux apprenants et apprenantes de travailler
+                                    sur des cas concrets d’entreprises. #PédagogieActive #ApprocheParCompétences.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://img.freepik.com/photos-gratuite/dirigeants-entreprises-discuter-leurs-collegues-whiteboa_1170-1837.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=sph" class="d-block w-100" alt="...">
+                                <div class="carousel-caption  d-md-block">
+                                    <h4  style="font-size: 50px;">Formateur/Formatrice chez Simplon.co</h4>
+                                    <p>C'est allier la technique et la transmission de vos compétences en proposant aux apprenants et apprenantes de
+                                        travailler
+                                        sur des cas concrets d’entreprises. #PédagogieActive #ApprocheParCompétences.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://img.freepik.com/photos-gratuite/femme-conferenciere-afro-americaine-donnant-presentation-dans-hall-atelier-universitaire_155003-3579.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=sph" class="d-block w-100" alt="...">
+                                <div class="carousel-caption  d-md-block">
+                                    <h4 style="font-size: 50px;">Formateur/Formatrice chez Simplon.co</h4>
+                                    <p>C'est allier la technique et la transmission de vos compétences en proposant aux apprenants et apprenantes de
+                                        travailler
+                                        sur des cas concrets d’entreprises. #PédagogieActive #ApprocheParCompétences.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <img src="https://img.freepik.com/photos-gratuite/groupe-multiethnique-jeunes-hommes-femmes-etudiant-interieur_1139-989.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=sph"
+                                    class="w-100" alt="..."> -->
+                </div>        
+            </section>
+            <!-- section groupe bouton -->
+            <section class="mt-1 mb-4">
+                <div class="navmenu container d-flex justify-content-center align-items-center ">
+                    <div class="bouttonnav">
+
+                       <a href="#avantages"><button type="button" class="btn btn-outline-secondary mt-2">Avantages du metier </button></a> 
+                    </div>
+                    <div class="bouttonnav">
+                    
+                        <a href="#form"><button type="button" class="btn btn-outline-secondary mt-2">Devenir formateur </button></a>
+                    </div>
+                    <div class="bouttonnav">
+                    
+                        <a href="#communaute"><button type="button" class="bouttonnav btn btn-outline-secondary mt-2">Nous rejoindre </button></a>
+                    </div>
+                    <div class="bouttonnav">
+                    
+                        <a href="#temoins"><button type="button" class="btn btn-outline-secondary mt-2">Temoingnages formateurs </button></a>
+                    </div>
+                    <!-- <button type="button" class="btn btn-outline-secondary">Devenir formateur</button>
+                    <button type="button" class="btn btn-outline-secondary">Nous rejoindre</button>
+                    <button type="button" class="btn btn-outline-secondary">Temoingnages formateurs</button> -->
+                </div>
+            </section>
+
+            <!-- end groupe bouton -->
+            <!-- section text -->
+            <section class="container mb-4">
+                <div class=" titre  d-flex justify-content-center  ">
+                   <h4>Devenir formateur / formatrice ​​​​​​​chez Simplon.co, c'est ...</h4>
+                </div>
+               
+                <div class=" text row  shadow">
+                    
+                    <div class="col-lg-4">
+                        <p><span >S’engager et être utile :</span> nos apprenants et apprenantes sont des jeunes quittant le système scolaire, des demandeurs
+                        demandeuses d’emplois et personnes dans une démarche d’insertion professionnelle, des salariées souhaitant évoluer ou se
+                        reconvertir, des primo-arrivants, des seniors, des personnes en situation de handicap. ​​​​​​​</p>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <p><span>​​​​​​​Être coach et faciliter les apprentissages :</span>pas de cours magistraux, mais des ateliers pour comprendre et
+                        pratiquer. Suivre ses apprenants et apprenantes de A à Z, depuis la participation à leur sélection dans le programme
+                        jusqu’à leur accompagnement vers l’insertion professionnelle.</p>
+                    
+                    </div>
+                    <div class="col-lg-4">
+                        <p><span>Travailler en équipe :</span> en binôme avec un co-formateur ou une co-formatrice, expert-e technique comme vous, et au sein
+                        d’une équipe pédagogique dédiée.</p>
+                    
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- end text -->
+
+            <!-- section avantages formateurs -->
+
+
+            <!-- teste  -->
+            <section class="mb-3" >
+                <div class=" mb-3 d-flex justify-content-center"  id="avantages">
+                    <h4>Les avantages d'être formateur / formatrice</h4>
+                </div>
+                <div class=" container modalite1">
+                    
+            
+                    <div class="box shadow-lg" style="height: 370px;">
+                        <div class="image">
+                            <img src="https://simplon.co/storage/62812/flexibilite.png">
+                        </div>
+                        <div>
+                            <h6 class="mb-3" style="font-weight: bold;">Avoir ​​​​​​​de ​​​​​​​
+                                ​​​​​​​la flexibilité</h6>
+                            Contrat plein temps, à temps partiel ou encore en freelance, Simplon.co est ouvert
+                            ​​​​​​​sur la meilleure manière de
+                            ​​​​​​​collaborer.
+                        </div>
+                       
+                    </div>
+            
+                    <div class="box shadow-lg" style="height: 370px;">
+                        <div class="image">
+                            <img src="https://simplon.co/storage/62813/formation.png">
+                        </div>
+                        <div>
+                            <h6 class="mb-3 " style="font-weight: bold;">Se former
+                                ​​​​​​​au quotidien</h6>
+                            Se former aux nouvelles modalités pédagogiques et rester à la pointe des nouvelles technologies : Simplon forme ses
+                            formateurs .​​​​​​​
+                        </div>
+                   
+            
+                    </div>
+                    <div class="box shadow-lg" style="height: 370px;">
+                        <div class="image">
+                            <img src="https://simplon.co/storage/62814/collectif.png">
+                        </div>
+                        <div>
+                            <h6 class="mb-3" style="font-weight: bold;">Être intégré
+                                ​​​​​​​au sein d'un collectif</h6>
+                            Chez Simplon.co, ​​​​​​​peu importe que l’on soit salarié ou prestataire, ​​​​​​​on est une seule équipe
+                            ​​​​​​​​​​​​​​au ​​​​​​​service
+                            ​​​​​​​ de l’inclusion numerique.
+                        </div>
+            
+                       
+            
+            
+                    </div>
+            
+            
+                </div>
+            </section>
+            <!--  -->
+           
+
+            <!-- teste  -->
+            
+
+
+            <!-- end teste -->
+            <!-- end avantages formateurs -->
+
+            <!-- section formation maispasque -->
+            <section class="container mb-4">
+            
+                <div class="card shadow-sm container">
+            
+                    <div class=" mb-3 " style="max-width: 1500px;">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://img.freepik.com/photos-gratuite/groupe-jeunes-assis-conference-ensemble_58466-11188.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=sph"
+                                    alt="" class="img-fluid rounded-start">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h6 class="card-title " style="font-weight: bold;">La formation mais pas que</h6>
+                                    Il est possible de participer au recrutement, à la formation et à la montée en compétence d’autres
+                                    formateurs/formatrices en devenant : référent formateur/formatrice, formateur de formateur ou encore responsable
+                                    pédagogique.
+                                    Chez Simplon.co, pas besoin d'avoir de l'expérience dans la formation.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+
+            <!-- end formation mais pas que -->
+
+
+            <!-- section nous former a former -->
+           <section class="container  mb-4 mt-2">
+                <div class="d-flex justify-content-center " id="form">
+                    <h4>Nous formons à former</h4>
+                
+                </div>
+                <div class="row mb-4">
+                
+                <div class="menuformer col-lg-6 mb-3">
+                    <h6 style="color: var(--rouge);">Le profil du formateur Simplon ?</h6>
+                    2 ans minimum d’expérience professionnelle sur les technos du référentiel enseigné. Une expérience dans la formation
+                    professionnelle est un plus, mais n’est pas indispensable ! Si vous avez mentorés des juniors, des stagiaires ou que
+                    vous avez envie de transmettre, vous êtes la bonne personne.
+
+                </div>
+                <div class="menuformer col-lg-5 ms-auto  ">
+                    <h6 style="color: var(--rouge);">La formation de formateur (F2F)</h6>
+                    
+                    “Former des professionnels par l’analyse du travail”, est une formation de 5 jours, dispensée à tous les nouveaux
+                    formateurs/formatrices Simplon.
+                
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="menuformer">
+                    <h6 style="color: var(--rouge);">Les objectifs visés sont :</h6>
+                    Apprendre le métier de formateur à Simplon et outiller sa pratique. Monter en compétences sur l’analyse de son travail
+                    et l’analyse des apprentissages. Réfléchir à la posture du formateur et aux modalités d’évaluation. Nos équipes vous
+                    apprennent à construire vos sessions de formation, utiliser notre plateforme pédagogique, à suivre vos apprenants et
+                    vous assurer de leur bonne montée en compétences tout au long de la formation.
+
+                </div>
+            </div>
+           </section>
+
+            <!-- end nous former a former -->
+
+            <!-- section une communaute  -->
+
+            <section class="container mb-4">
+               
+                    <div class="card shadow-sm container" id="communaute">
+                      
+                            <div class=" mb-3 " style="max-width: 1500px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="https://img.freepik.com/photos-gratuite/curseur-partage-dossiers-cliquez-concept-reseau-informatique_53876-21395.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=sph"
+                                            alt="" class="img-fluid rounded-start">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h6 class="card-title"></h6>
+                                            <h6 style="font-weight: bold;">Une communauté de plus de 150 formateurs
+                                                Experts dans tous les métiers du numérique </h6>
+                                            Développement web : Back-end et Front end,Développement natif et mobile sur Android et iOS
+                                            Infrastructure & DevOps : Administration systèmes et réseaux, Support bureautique, Cybersécurité ,Cloud
+                                            Data analyse / Intelligence Artificielle
+                                            Méthode Agile, Culture DevOps, Acculturation numérique…
+                                            Il y a une formation adaptée à tous vos savoir-faire !
+                                            <div class="mt-2 d-flex justify-content-center">
+                                                <button type="button" class="bouttonOffreFormation btn btn-custom btn-md">DECOUVREZ NOTRE OFFRE FORMATION</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                    </div>
+              
+            </section>
+            <!--  end communaute-->
+
+            <!-- section modalite  -->
+            <section class="mb-3">
+                <div class=" container modalite1">
+            
+                    <div class="box shadow-lg" style="height: 450px;">
+                        <div class="image">
+                            <img src="https://simplon.co/storage/62829/comment.png">
+                        </div>
+                        <h6 class="mb-0" style="font-weight: bold;">Quel contrat ?</h6><br>
+                        <p>Le mot d’ordre est flexibilité : Nous nous adaptons à votre situation professionnelle : Contrats salariés
+                            (CDD, CDI) ou
+                            contrat de prestation, à temps plein ou Temps partiel.
+                            <br>
+                            ​​​​​​​
+                            <strong>​​​​​​​Avec qui ?</strong><br>
+                            Vous travaillerez le plus souvent en binôme avec un autre formateur et toujours accompagné d’une équipe
+                            pédagogique
+                            Simplon.co.
+                        </p>
+                    </div>
+            
+                    <div class="box shadow-lg" style="height: 450px;">
+                        <div class="image">
+                            <img src="https://simplon.co/storage/62830/combien-de-temps.png">
+                        </div>
+                        <h6 class="mb-0 " style="font-weight: bold;">Où ?</h6>
+                        <p>En présentiel, dans une de nos Fabriques partout en France et à l’international.
+                            
+            
+                            ​​​​​<strong>​Combien temps ?</strong>
+                            L’intervention des formateurs est variable en fonction des thématiques abordées (cursus et formats).
+                            ​​​​​​​
+                            <strong class="">​​​​​​​Comment ?</strong>
+                            Nous mettons à votre disposition des outils pour un suivi optimal de vos promotions : Simplonline,
+                            plateforme numérique
+                            de pédagogie active en approche par compétences, Canevas, pour construire vos formations.
+                        </p>
+            
+            
+                    </div>
+                    <div class="box shadow-lg" style="height: 450px;">
+                        <div class="image">
+                            <img src="https://simplon.co/storage/62831/type-formation.png">
+                        </div>
+                        
+                        <h6 class="mb-0" style="font-weight: bold;">Deux typologies de formations innovantes</h6>
+                        
+                        <p>Il existe principalement 2 types de formations. Les Formations courtes intensives de type “SAS” (cycles
+                            certifiants
+                            et/ou préparatoires aux cycles longs)
+                            Formation en continu : 5 jours par semaine pendant 4 à 6 semaines.
+                            Ils partent ensuite en entreprise pendant 12 à 18 mois sur un rythme 1 semaine de cours / 3 semaines en
+                            entreprise.
+                            
+                            
+                            Découvrez nos formations ouvertes à la candidature.</p>
+            
+            
+                    </div>
+            
+            
+                </div>
+            </section>
+
+            <!-- end section modalite -->
+            <div class="row mb-3 ">
+                <div class="mt-4 d-flex justify-content-center">
+                    <button type="button" class="bouttonOffreFormation btn btn-custom btn-md">DECOUVREZ NOTRE OFFRE FORMATION</button>
+                </div>
+            </div>
+            <!-- section  video -->
+            <section class="container">
+                <div class="row " id="temoins">
+                    <div class="  col-12 col-sm-12 col-lg-6">
+                        <h6 >4 bonnes raisons   ​​​​​​​de rejoindre Simplon</h6>
+                        <iframe width="380" height="350" src="https://www.youtube.com/embed/aALxaZie4Vs"
+                            title="4 raisons de devenir formateur.ice chez Simplon.co" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class=" col-12 col-sm-12 col-lg-6 ms-auto  ">
+                        <h6>Portrait d'un formateur</h6>
+                        <iframe width="380" height="350" src="https://www.youtube.com/embed/dI-qwERnqWs"
+                            title="Témoignage Jules Grand, formateur chez Simplon.co" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <!-- end section video -->
+
+
+            <!-- teste -->
+       
+            <!-- end teste -->
+        
+
+        </main>
+    <!-- end main -->
+
+    
+    <!-- section footer -->
+    <footer class=" text-center text-lg-start  text-muted ">
+        <!-- Section: Social media -->
+        <section class="antifaq container-fluid ">
+            <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+                <div class="row">
+                    <div class="col-lg-4">
+                        <span class="">Vous avez une question?</span><br>
+                        <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+    
+                    </div>
+                    <div class="col-lg-4 ms-auto  Inputbutton ">
+                        <span>Inscrivez-vous a la newsletter</span><br>
+                        <div class="newletter">
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+        </section>
+    
+    
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-lg-8 ">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6 ">
+                                <h6 class="  mb-4 ">
+                                    Pages
+                                </h6>
+                                <ul>
+                                    <li><a href="../devenir-formateur/formateur.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Devenir formateur</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Rejoindre notre equipe</a></li>
+                                    <li><a href=""><a href="../blog/blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Blog</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Plan du site</a></li>
+    
+                                </ul>
+    
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                <ul>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Presse</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Simplon foundation</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Accessibilite</a></li>
+                                    <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Mention legales</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                
+                                
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                
+                            </div> -->
+    
+                    </div>
+    
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+    
+    
+    
+                    <!-- Grid column -->
+                    <div class="col-12 col-sm-12 col-lg-4">
+                        <div class="">
+                            <!-- Links -->
+                            <h6 class=" mb-4">Contact</h6>
+                            <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34
+                                Avenue,Batiment D a Grenoble </p>
+                            <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                Email:info@example.com
+                            </p>
+    
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <hr class="container traitfooter">
+        <div class="text-center ">
+            © Design par Groupe-1 .Tout droit reserve
+    
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- end footer -->
+    
+</body>
+</html>

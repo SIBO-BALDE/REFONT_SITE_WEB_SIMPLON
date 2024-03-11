@@ -1,0 +1,95 @@
+
+/* css footer */
+footer{
+    width: 100%;
+}
+ul{
+    padding: 0;
+    /* margin: 0; */
+}
+.antifaq{
+    background-color: var(--rouge);
+}
+.inputEmail,.btnInscrire{
+    border: 1px solid var(--rouge);
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+.antifaq span{
+    color: white;
+    font-weight: bold;
+}
+.traitfooter{
+    color: var(--rouge);
+}
+ul li a{
+    color: var(--noir);
+}
+svg{
+    color: var(--rouge);
+}
+ 
+.point{
+    width: 1px;
+
+}
+/* footer{
+    border: 1px solid red;
+} */
+footer h4{
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+}
+
+
+/* end css footer */
+
+/* responsive footer */
+@media screen and (width>= 390px){
+    .antifaq .container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+         
+}
+@media screen and (max-width:390px){
+    li svg{
+        display: none;
+    }
+    footer li{
+        text-decoration: underline !important;
+    }
+    .newletter{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .Inputbutton{
+        margin-top: 10px;
+    }
+    .navmenu{
+       
+            flex-direction: column;
+
+    }
+<<<<<<< HEAD
+    .videotetu iframe{
+        width: 360px;
+    }
+=======
+>>>>>>> 9b62b53775c36c381e450b51d5bd4db90c811bad
+
+    
+} 
+
+
+
+<<<<<<< HEAD
+/* end responsive footer */
+=======
+/* end responsive footer */
+>>>>>>> 9b62b53775c36c381e450b51d5bd4db90c811bad

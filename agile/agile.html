@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <!-- Lien booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="agile.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+<header class="" id="header" class="">
+    <div class="header-top d-flex justify-content-between py-2">
+        <div class="section-left d-flex">
+            <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+            <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+            <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+            <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+        </div>
+        <div class="section-right d-flex gap-2 align-items-center gap-4">
+            <div class="search-part">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                            class="fa-solid fa-magnifying-glass"></i></label>
+                </form>
+            </div>
+            <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="lang d-flex gap-2">
+                <span>EN</span>
+                <span>FR</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+        <div class="logo">
+            <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+        </div>
+        <div class="menu d-flex">
+            <div class="nav-menu d-flex" id="nav-menu">
+                <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                <div class="nav-lit dropdown me-1">
+                    <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        A Propos
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                        <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                        <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                de fabriques</a></li>
+                        <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                pour un numérique inclusif</a></li>
+                        <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Nos Formations
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                cybersécurité</a></li>
+                        <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                d'applications</a></li>
+                        <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                numériques</a></li>
+                        <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                        <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                        <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Alternances
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                en alternance</a></li>
+                        <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Candidats
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                pour les femmes</a></li>
+                        <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                situation de handicap</a></li>
+                        <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                refugés étrangers</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-1">
+                    <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="10,20">
+                        Entreprises
+                    </button>
+                    <ul class="sous-menu dropdown-menu">
+                        <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                salariés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hide-menu" id="hide-menu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <div class="search-mobile" id="search-mobile">
+        <form action="">
+            <input type="text" placeholder="Entrez votre texte">
+            <input type="submit" value="Rechercher">
+        </form>
+    </div>
+    <script>
+        let navMenu = document.getElementById('nav-menu');
+        let burgerMenu = document.getElementById('burger-menu');
+        let hideMenu = document.getElementById('hide-menu');
+
+        hideMenu.style.display = 'none'
+
+        burgerMenu.addEventListener('click', function () {
+            navMenu.style.left = '0';
+            hideMenu.style.display = 'block';
+            burgerMenu.style.display = 'none';
+        });
+        hideMenu.addEventListener('click', function () {
+            navMenu.style.left = '200%';
+            hideMenu.style.display = 'none';
+            burgerMenu.style.display = 'block';
+        })
+
+        let searchMobile = document.getElementById('search-alternate');
+        let barreSearch = document.getElementById('search-mobile');
+
+        searchMobile.addEventListener('click', function () {
+            barreSearch.style.top = '40vh';
+        });
+    </script>
+
+</header>
+    <main id="accueil">
+        <div class="banner">
+            <div class="content-banner">
+                <h4>Gestion de projet agile</h4>
+                <div class="chemin">
+                    <bouton>Acueil / Nos formations</bouton>
+                </div>
+            </div>
+        </div>
+        <section class="corps">
+            <div class="corps-body">
+                <div class="">
+                    <div class="tout-ele list-group" id="list-tab" role="tablist">
+                        <a class="list-corps list-group-item list-group-item-action active" id="list-home-list"
+                            data-bs-toggle="list" href="#list-home" role="tab"
+                            aria-controls="list-home">Présentation</a>
+                        <a class="list-corps list-group-item list-group-item-action" id="list-profile-list"
+                            data-bs-toggle="list" href="#list-profile" role="tab"
+                            aria-controls="list-profile">Compétence</a>
+                        <a class="list-corps list-group-item list-group-item-action" id="list-messages-list"
+                            data-bs-toggle="list" href="#list-messages" role="tab"
+                            aria-controls="list-messages">Admission</a>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="content-ele tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <div class="part-ele">
+                                <h3>Gestion de projet en mobilisant les methides agiles</h3>
+                                <p>Il s’agit d’une méthode de gestion de projet révolutionnaire caractérisée par une démarche itérative et incrémentale. En
+                                d’autres termes, les projets agiles sont construits lentement, étape par étape. Dans la gestion de projet
+                                traditionnelle, on attend généralement d’avoir exécuté l’ensemble des étapes d’un projet avant de soumettre le produit
+                                final au client. Avec l’approche agile, les clients peuvent évaluer la qualité du projet en cours de réalisation et
+                                intervenir pour rectifier le tir au besoin. Ainsi, il risque moins d’y avoir des disparités entre les attentes des
+                                clients et le produit final. La gestion de projet traditionnelle est souvent très rigide, et toute modification au plan
+                                initial peut poser un casse-tête. Les projets agiles sont généralement beaucoup plus souples, collaboratifs et
+                                interactifs, et la plupart des changements ajoutent de la valeur aux projets.</p>
+                                <h4>Les compétences visées au cours de cette formation sont les suivantes :</h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Analyse des métiers du
+                                        commanditaire et évaluation globale de la vulnérabilité de son système
+                                        d’information</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Élaboration et mise en œuvre
+                                        d’une stratégie de collecte d’événements en provenance du système d’information
+                                        du commanditaire</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Élaboration de l’analyse des
+                                        événements de sécurité</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Analyse et gestion des
+                                        incidents de sécurité</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Élaboration et mise en œuvre
+                                        d’une stratégie de veille technologique pour renforcer la gestion des
+                                        risques</span></p>
+                                <h4 class="part-ele-item">Les débouchés /suite de parcours</h4>
+                                <p>InserJeunes : un service d’aide à l’orientation des jeunes en voie professionnelle
+                                    est disponible.</p>
+                            </div>
+                            <hr class="hr-proto">
+                            <div class="part-ele">
+                                <h3 class="title-ele">CERTIFICATION</h3>
+                                <h4>Parcours délivrant deux certifications Simploninscrites au répertoire spécifique:
+                                </h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>RS5021“Analyser les
+                                        incidents de sécurité détectés”
+                                        sur le système d’information</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>RS5020 “Surveiller un
+                                        système d’information sur des critères de sécurité informatique”</span></p>
+                                <h4>Voie d’accès à la certification :</h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Après un parcours de
+                                        formation continue ;</span></p>
+                            </div>
+                            <hr class="hr-proto">
+                            <div class="part-ele">
+                                <h3 class="title-ele">PRIX DE LA FORMATION</h3>
+                                <p class="list-agile-last">Le coût horaire de cette formation (incluant le passage de
+                                    certifications) varie de 12 euros à 27 euros de l'heure (hors
+                                    majoration ou modulation liée à un dispositif spécifique). Pour les apprenants,
+                                    cette formation est intégralement prise
+                                    en charge. Simplon s'assure du financement de cette formation au travers de
+                                    différents dispositifs à savoir Pôle Emploi,
+                                    OPCO, Fonds européens, Régions, CPF, Entreprise (sur devis dans le cadre de la
+                                    formation de leurs salariés, ou au
+                                    travers d'un reste à charge dans le cadre de l'alternance),etc.</p>
+                            </div>
+                            <div class="part-ele">
+                                <h3 class="title-ele">CHIFFRE CLES DU SECTEUR</h3>
+                                <div class="container">
+                                    <div class="offre-sector row">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>+3,6%</h3>
+                                                <p>C’est la croissance du secteur du numérique en 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>232 000</h3>
+                                                <p>C’est le nombre de postes à pourvoir entre 2017 et 2027</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>41 764 £</h3>
+                                                <p>C’est le revenu annuel brut moyen d’un-e développeur-se en France</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <div class="part-ele">
+                                <h4>Les compétences visées au cours de cette formation sont les suivantes :</h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Évaluer la criticité des
+                                        risques liés aux métiers du commanditaire sur le système d’information</span>
+                                </p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Analyser l’architecture d’un
+                                        système d’information et des protocoles de sécurité du commanditaire</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Élaborer une stratégie de
+                                        collecte d'événements provenant d’un système d’information</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Programmer les règles de
+                                        filtre du collecteur permettant la collecte des événements à surveiller</span>
+                                </p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Analyser les événements
+                                        collectés afin de détecter des incidents de sécurité</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Qualifier un incident de
+                                        sécurité détecté</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Identifier les tactiques et
+                                        techniques d’attaques ainsi que les objectifs de l’attaquant</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Rédiger un rapport d’alerte
+                                        sous la forme d’un compte-rendu d’incident</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Concevoir un système de
+                                        veille technologique permettant de collecter, classifier, analyser et diffuser
+                                        l’information liés à la cybersécurité aux différents acteurs de l’organisation
+                                        ou du commanditaire</span></p>
+                            </div>
+                            <hr class="hr-proto">
+                            <div class="part-ele">
+                                <h3 class="title-ele">CERTIFICATION</h3>
+                                <h4>Parcours délivrant deux certifications Simploninscrites au répertoire spécifique:
+                                </h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>RS5021“Analyser les
+                                        incidents de sécurité détectés”
+                                        sur le système d’information</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>RS5020 “Surveiller un
+                                        système d’information sur des critères de sécurité informatique”</span></p>
+                                <h4>Voie d’accès à la certification :</h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Après un parcours de
+                                        formation continue ;</span></p>
+                            </div>
+                            <hr class="hr-proto">
+                            <div class="part-ele">
+                                <h3 class="title-ele">PRIX DE LA FORMATION</h3>
+                                <p class="list-agile-last">Le coût horaire de cette formation (incluant le passage de
+                                    certifications) varie de 12 euros à 27 euros de l'heure (hors
+                                    majoration ou modulation liée à un dispositif spécifique). Pour les apprenants,
+                                    cette formation est intégralement prise
+                                    en charge. Simplon s'assure du financement de cette formation au travers de
+                                    différents dispositifs à savoir Pôle Emploi,
+                                    OPCO, Fonds européens, Régions, CPF, Entreprise (sur devis dans le cadre de la
+                                    formation de leurs salariés, ou au
+                                    travers d'un reste à charge dans le cadre de l'alternance),etc.</p>
+                            </div>
+                            <div class="part-ele">
+                                <h3 class="title-ele">CHIFFRE CLES DU SECTEUR</h3>
+                                <div class="container">
+                                    <div class="offre-sector row">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>+3,6%</h3>
+                                                <p>C’est la croissance du secteur du numérique en 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>232 000</h3>
+                                                <p>C’est le nombre de postes à pourvoir entre 2017 et 2027</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>41 764 £</h3>
+                                                <p>C’est le revenu annuel brut moyen d’un-e développeur-se en France</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            <div class="part-ele">
+                                <h4>Les prérequis</h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Très forte motivation, à
+                                        prouver !</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Niveau Bac+2 informatique,
+                                        systèmes et réseaux ou expérience professionnelle significative dans le
+                                        domaine.</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Ce que nous cherchons ? De
+                                        la curiosité, de la créativité, une bonne expression à l’oral et à l’écrit, une
+                                        représentation claire du métier… et bien sûr, l’envie de s’engager dans une
+                                        formation intense !</span></p>
+                                <h4 class="part-ele-item">Pour les personnes en situation de handicap</h4>
+                                <p>Les formations Simplon sont ouvertes à toutes et tous, inclusives et accueillantes
+                                    pour les personnes en situation de handicap. <strong>Concernant les modalités
+                                        physiques de la formation,</strong>c’est environ 7h par jour de station assise,
+                                    dans un open space (donc parfois bruyant), avec la nécessité de se déplacer dans la
+                                    salle et d’éventuellement transporter son ordinateur. <strong>Concernant les
+                                        modalités organisationnelles,</strong> il y a possibilité de télétravail ou, en
+                                    présentiel, d’isolement dans une salle pour se reposer, même s’il y a la nécessité
+                                    de travailler régulièrement en groupe. </p>
+                                <p><strong>La mise en place d’aménagements est possible, n'hésitez pas à prendre contact
+                                        avec l'équipe de la Fabrique.</strong> En fonction des aménagements, ceux-ci se
+                                    font soit uniquement avec le ou la référente handicap et l’équipe pédagogique soit
+                                    avec l’appui des Services Public de l’Emploi et les partenaires spécialisés (Agefiph
+                                    et ressource Handicap Formation). </p>
+                            </div>
+                            <hr class="hr-proto">
+                            <div class="part-ele">
+                                <h3 class="title-ele">CERTIFICATION</h3>
+                                <h4>Parcours délivrant deux certifications Simploninscrites au répertoire spécifique:
+                                </h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>RS5021“Analyser les
+                                        incidents de sécurité détectés”
+                                        sur le système d’information</span></p>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>RS5020
+                                        “Surveiller un système d’information sur des critères de sécurité
+                                        informatique”</span></p>
+                                <h4>Voie d’accès à la certification :</h4>
+                                <p class="list-agile"><i class="fa-solid fa-circle"
+                                        style="color: #CE0033; font-size: 0.8em;"></i><span>Après un
+                                        parcours de formation continue ;</span></p>
+                            </div>
+                            <hr class="hr-proto">
+                            <div class="part-ele">
+                                <h3 class="title-ele">PRIX DE LA FORMATION</h3>
+                                <p class="list-agile-last">Le coût horaire de cette formation (incluant le passage de
+                                    certifications) varie de 12
+                                    euros à 27 euros de l'heure (hors
+                                    majoration ou modulation liée à un dispositif spécifique). Pour les apprenants,
+                                    cette formation est
+                                    intégralement prise
+                                    en charge. Simplon s'assure du financement de cette formation au travers de
+                                    différents dispositifs à savoir Pôle
+                                    Emploi,
+                                    OPCO, Fonds européens, Régions, CPF, Entreprise (sur devis dans le cadre de la
+                                    formation de leurs salariés, ou
+                                    au
+                                    travers d'un reste à charge dans le cadre de l'alternance),etc.</p>
+                            </div>
+                            <div class="part-ele">
+                                <h3 class="title-ele">CHIFFRE CLES DU SECTEUR</h3>
+                                <div class="container">
+                                    <div class="offre-sector row">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>+3,6%</h3>
+                                                <p>C’est la croissance du secteur du numérique en 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>232 000</h3>
+                                                <p>C’est le nombre de postes à pourvoir entre 2017 et 2027</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="of-div container-cs">
+                                                <h3>41 764 £</h3>
+                                                <p>C’est le revenu annuel brut moyen d’un-e développeur-se en France</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class=" text-center text-lg-start  text-muted ">
+            <!-- Section: Social media -->
+            <section class="antifaq container-fluid ">
+                <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="">Vous avez une question?</span><br>
+                            <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+
+                        </div>
+                        <div class="col-md-4 ms-auto  Inputbutton">
+                            <span>Inscrivez-vous a la newsletter</span><br>
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <section class="border">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row ">
+                        <!-- Grid column -->
+                        <div class="col-lg-8 ">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-6 ">
+                                    <h4 class="  mb-4 ">
+                                        Pages
+                                    </h4>
+                                    <ul class="foot-ul">
+                                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Devenir formateur</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Rejoindre notre equipe</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Blog</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Plan du site</a></li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                    <ul>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Presse</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Simplon foundation</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Accessibilite</a></li>
+                                        <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Mention legales</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="">
+                                <!-- Links -->
+                                <h4 class=" mb-4">Contact</h4>
+                                <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34
+                                    Avenue,Batiment D a
+                                    Grenoble </p>
+                                <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01
+                                    234 567 88
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                    Email:info@example.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <hr class="container traitfooter">
+            <div class="text-center border">
+                © Design par Groupe-1 .Tout droit reserve
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+    <!-- section footer -->
+    <!-- end footer -->
+</body>
+
+</html>

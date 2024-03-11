@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <!-- Lien booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="actions.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+    <section id="accueil">
+        <div class="banner">
+            <div id="carouselExampleAutoplaying" class="banner-carrousel carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="content-banner-img">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/292/582/small/elegant-black-and-gold-banner-background-free-vector.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="desc-accueil carousel-caption d-md-block">
+                            <h5>Migrations</h5>
+                            <p>Simplon.co s’engage depuis 2016 pour l‘inclusion socio-professionnelle des étranger.ère.s en leur proposant une offre de
+                            formation adaptée à leurs besoins : des formations numériques avec des cours de français intensifs en fonction de leurs
+                            projets et de leurs niveaux.</p>
+                            <div class="chemin" style="font-weight: 700; margin-top: 20px;">
+                                Accueil / Candidat
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <div id="name-card" class="row name-card">
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://migrations.simplon.co/uploads/Migrations/Programme-refugeeks%20(1).jpg" alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Refugeeks</h5>
+                            <p>Un parcours certifiant aux compétences informatiques fondamentales de 6 à 8 semaines à destination des bénéficiaires de
+                            la protection internationale (personnes réfugiées, bénéficiaires de la protection subsidiaire, bénéficiaires de la
+                            protection temporaire).</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <span id="cta" class="cta">EN SAVOIR PLUS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://migrations.simplon.co/uploads/Migrations/SIMPLON-formation-Montreuil.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Refugeeks2</h5>
+                            <p>Un parcours certifiant pour préparer l’entrée aux formations métiers du numérique (Développeur.se web, Métiers de
+                            l’infrastructure) de 7 semaines, pour les bénéficiaires de la protection internationale et les étranger.ères
+                            primo-arrivant-es.</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <span id="cta" class="cta">EN SAVOOIR PLUS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-12 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://migrations.simplon.co/uploads/Migrations/programme-Refugeeks-Simplon.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Welcode</h5>
+                            <p>Un parcours de formation aux métiers du numérique avec des cours de français intensifs et un accompagnement renforcé
+                            vers l'emploi, destiné aux personnes réfugiées et aux ressortissant.es non-européen.nes</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <span id="cta" class="cta">EN SAVOIR PLUS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pre-section col-12">
+                    <h4 class="title-section">Les actualités du Programme Migrations</h4>
+                    <div class="underline-title">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://migrations.simplon.co/uploads/Site%20national/Articles-site-nationale/Aleksandra.png"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>A l’occasion de la journée internationale des droits des femmes</h5>
+                            <p>Les apprenantes du programme migrations à l’honneur.</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <span id="cta" class="cta">EN SAVOIR PLUS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://migrations.simplon.co/uploads/Migrations/apprenants-Refugeeks-Simplon.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Le programme Refugeeks continue de se développer sur tout le territoire</h5>
+                            <p>avec de nouvelles formations à venir !</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <span id="cta" class="cta">EN SAVOIR PLUS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-12 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://migrations.simplon.co/uploads/Site%20national/Articles-site-nationale/Asif%20Refugeeks.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Simplon se mobilise</h5>
+                            <p>à l’occasion de la journée mondiale des réfugié.e.s !</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <span id="cta" class="cta">DECOUVRIR NOS FORMATIONS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actualites">
+            <div class="actu-number">
+                <div class="pre-section">
+                    <h4 class="title-section">Appel à candidatures : prestataires de formation</h4>
+                    <div class="underline-title">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="appel-content">
+                <p>Dans le cadre du projet Welcode, pour ses formations qui se déroulent entre juin 2018 et mai 2021 sur l’ensemble du
+                territoire français (régions Ile-de-France, Hauts-de-France, Grand Est, Grand Ouest, Nouvelle-Aquitaine, Occitanie,
+                Provence-Alpes-Côte-d’Azur, Auvergne-Rhône-Alpes, Outre-mer), Simplon.co recherche des prestataires de formation.</p>
+            </div>
+        </div>
+        <div class="soutiens">
+            <div class="pre-section">
+                <h4 class="title-section">Nos soutiens</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <section class="logos">
+                <div class="logoContainer">
+                    <div class="slideLogo">
+            
+                        <!-- Img Code -->
+                        <div class="slide">
+                            <img src="images/logo-apple.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="images/logo-orange.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="images/logo-sonatel-academie.jfif" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="images/logo-wave.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4f3.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://emoneyadvisor.com/wp-content/uploads/2023/06/eMoney-White-Logo-on-Dark-Blue.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://play-lh.googleusercontent.com/cqlKRC2uiOSxRClUJw7Oxn6Ub2Tpcf9C4cJraYDxF2s_FXhLfimZmAW1_nxZC8X9Ct8" />
+                        </div>
+            
+                        <div class="slide">
+                            <img
+                                src="https://play-lh.googleusercontent.com/W2VU4_nAGktxAYR04k84H6fTPQ6e9B3GVtAKBwoDINDwkpcSb3dLq3UVixdhvximcqA" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://img.freepik.com/vecteurs-libre/vecteur-degrade-logo-colore-oiseau_343694-1365.jpg" />
+                        </div>
+            
+                        <div class="slide">
+                            <img
+                                src="https://universidadesdemexico.mx/logos/original/logo-universidad-privada-del-sur-de-mexico.webp" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://yt3.googleusercontent.com/VtOA6d6XgNkURqC0bSJdvgDlscjDEGQgwjNmNHUfRfBQ6bi1Jy4TpM4sjrms6uF65uS2XQZ31ms=s900-c-k-c0x00ffffff-no-rj" />
+                        </div>
+            
+                        <div class="slide">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/43/Logo_%C3%89quipe_France_Football_2018.svg/1358px-Logo_%C3%89quipe_France_Football_2018.svg.png" />
+                        </div>
+                        <!-- Img Code End -->
+            
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="partenaire">
+            <div class="pre-section">
+                <h4 class="title-section">Nos partenaires</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <section class="logos">
+                <div class="logoContainer">
+                    <div class="slideLogo">
+            
+                        <!-- Img Code -->
+                        <div class="slide">
+                            <img src="https://cdn5.f-cdn.com/contestentries/1093903/25344754/59884424e78aa_thumb900.jpg" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/58568d224f6ae202fedf2720.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://infominute.files.wordpress.com/2015/12/logo-intelcia-vector.jpg" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mangekyou_Sharingan_Itachi.svg/2048px-Mangekyou_Sharingan_Itachi.svg.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://cdn5.f-cdn.com/contestentries/1093903/25344754/59884424e78aa_thumb900.jpg" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/58568d224f6ae202fedf2720.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://infominute.files.wordpress.com/2015/12/logo-intelcia-vector.jpg" />
+                        </div>
+            
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" />
+                        </div>
+            
+                        <div class="slide">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mangekyou_Sharingan_Itachi.svg/2048px-Mangekyou_Sharingan_Itachi.svg.png" />
+                        </div>
+                        <!-- Img Code End -->
+            
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class=" text-center text-lg-start  text-muted ">
+            <!-- Section: Social media -->
+            <section class="antifaq container-fluid ">
+                <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="">Vous avez une question?</span><br>
+                            <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+
+                        </div>
+                        <div class="col-md-4 ms-auto  Inputbutton">
+                            <span>Inscrivez-vous a la newsletter</span><br>
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <section class="border">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row ">
+                        <!-- Grid column -->
+                        <div class="col-lg-8 ">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-6 ">
+                                    <h4 class="  mb-4 ">
+                                        Pages
+                                    </h4>
+                                    <ul class="foot-ul">
+                                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Devenir formateur</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Rejoindre notre equipe</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Blog</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Plan du site</a></li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                    <ul>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Presse</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Simplon foundation</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Accessibilite</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Mention legales</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="">
+                                <!-- Links -->
+                                <h4 class=" mb-4">Contact</h4>
+                                <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34
+                                    Avenue,Batiment D a
+                                    Grenoble </p>
+                                <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01
+                                    234 567 88
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                    Email:info@example.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <hr class="container traitfooter">
+            <div class="text-center border">
+                © Design par Groupe-1 .Tout droit reserve
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </section>
+    <!-- section footer -->
+    <!-- end footer -->
+    <script src="../accueil/carte-1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.handi{
+    /* border: 3px solid #13be2a; */
+    background-image: url(https://t4.ftcdn.net/jpg/06/31/25/67/240_F_631256784_5unB9rVovMUbTzUTk5332aNrxFR7CPMX.jpg);
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.handicap{
+    /* border: 1px solid #000; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2%;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+#simplon{
+    /* border: 1px solid #000; */
+    margin: 2%;
+    text-align: center;
+}
+.handicap .cap{
+    border: 1px solid #444343;
+    background-image: url(https://t4.ftcdn.net/jpg/06/03/12/69/240_F_603126923_gMAuHmsGxDhpgW1marpX10s3b2PlHgvB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2%;
+    padding: 200px;
+}
+ 
+/* .cap {
+    background-image: url(../public/image/hand.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2%;
+   
+} */
+.handicap .sommaire{
+    border: 1px solid #5c5b5b;
+    padding: 0;
+    width: 100%;
+}
+.sommaire p{
+  margin-right: 5%;
+  text-align: justify;
+    /* width: 40%; */
+}
+.chiffre h3{
+    text-align: center;
+}
+.cles{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../public/image/cla.PNG);
+    background:linear-gradient(0deg, rgba(3, 3, 3, 0.603), rgba(15, 20, 25, 0.699)), url(../public/image/cla.PNG), no-repeat;
+    padding: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+#text{
+    color: white;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+#num{
+    /* border: 1px solid #000; */
+    width: 25%;
+    margin-left: 1%;
+    background-color: #00000081;
+}
+#num :first-child{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+/* #text{
+    border: 1px solid #000;
+    margin-left: 5%;
+} */
+/* #num :last-child{
+    margin-top: 10%;
+    border: 1px solid #000;
+
+} */

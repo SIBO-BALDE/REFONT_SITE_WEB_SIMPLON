@@ -1,0 +1,185 @@
+/* banniere */
+.banner {
+    margin-top: 100px;
+
+}
+.banner::after {
+    content: "";
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.3);
+    /* z-index: 50; */
+}
+.raccoursi{
+    position: absolute;
+    bottom: 7%;
+    width: 40%;
+    padding: 10px;
+    z-index: 60;
+    left:250px ;
+}
+.raccoursi a{
+
+    color:white;
+    font-weight: bold;
+    
+}
+
+.banner img {
+    height: 500px;
+}
+
+.carousel-caption {
+    
+   
+    bottom: 25%;
+    color: white;
+    
+    z-index: 60;
+    
+}
+
+.carousel-caption h3 {
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* end banniere */
+
+/* section text */
+.description{
+    border: 2px solid var(--rouge);
+    border-radius: 15px 50px;
+}
+
+/* end text */
+
+
+
+/* section modalite */
+
+
+  .modalite{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px 20px;
+}
+
+ .box {
+    /* calcule largeur d'un div */
+    width: calc(33% - 10px);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+    
+}
+
+ .box .quote i {
+    margin-top: 10px;
+    font-size: 45px;
+    color: #17c0eb
+}
+
+.container  .box .image {
+    margin: 10px 0;
+    height: 150px;
+    width: 150px;
+    background: var(--rouge);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+ .box .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+ .box p {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 14px;
+    /* font-weight: 400; */
+}
+
+ .box .name_job {
+    margin: 10px 0 3px 0;
+    color: #8e44ad;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ .rating i {
+    font-size: 18px;
+    color: #8e44ad;
+    margin-bottom: 5px;
+}
+.btns {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btns button {
+    background:var(--rouge);
+    width: 100%;
+    padding: 8px 0px;
+    outline: none;
+    border: 2px solid var(--rouge);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color:white;
+    transition: all 0.3s linear;
+}
+
+
+ 
+ 
+
+@media (max-width:1200px) {
+    .container .box {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+        
+}
+
+@media (max-width:768px) {
+    .container .box {
+        width: 100%;
+    }
+    
+}
+/* end modalite */
+
+
+
+/* section foundation */
+.bouttonActions {
+    color: white;
+    background-color: var(--rouge);
+    padding: 10px;
+
+
+}
+.bouttonActions:hover{
+    color: var(--rouge);
+    background-color:white;
+    border: 2px solid var(--rouge);
+}
+/* end section foundation */

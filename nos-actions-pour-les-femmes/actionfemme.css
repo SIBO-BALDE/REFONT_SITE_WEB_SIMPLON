@@ -1,0 +1,234 @@
+:root{
+    --rouge :#CE0033;
+    --bleu :#06114d8b;
+    --gris :#f6f6f6;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+#header{
+    box-shadow: 0 2px 12px #06114d8b
+}
+/* debut css de la banniere */
+.action-banniere{
+    background-image: url(https://img.freepik.com/photos-gratuite/groupe-femmes-affaires-participant-discussion-groupe_53876-26298.jpg?size=626&ext=jpg&ga=GA1.2.12207566.1692912950&semt=ais);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    margin-top: 100px;
+}
+.action-banniere::before{
+    content: '';
+    background-color: #06114d8b;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.action-banniere h1{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    position: relative;
+    z-index: 2;
+}
+.action-path {
+    color: white;
+    font-weight: bold;
+    /* font-size: 80px; */
+    position: absolute;
+    z-index: 2;
+    top: 440px;
+    left: 500px;
+}
+.action-titre{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    top: 380px;
+    text-align: center;
+    font-size: 18px;
+}
+.action-banniere p a{
+    color: white;
+}
+.action-banniere-carte{
+    display: flex;
+    justify-content: space-between;
+}
+.action-banniere-carte-item{
+    background-color: #f6f6f6;
+    width: 30%;
+    height: 130px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--bleu);
+    margin-top: -50px;
+    z-index: 2;
+    padding-top: 8px;
+    margin-bottom: 40px;
+}
+.action-banniere-carte-item h2{
+    color: var(--rouge);
+}
+.action-banniere-carte-item p{
+    font-weight: bold;
+}
+/* fin css de la banniere */
+
+/* début css du contenu */
+.action-item{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    width: 90%;
+    height: 350px;
+    /* border: 2px solid rgb(16, 13, 13); */
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    /* margin: 0 auto; */
+}
+.action-item img, .action-item1 img{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+.action-item-text{
+    background-color: white;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.action-item1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--rouge);
+    width: 90%;
+    height: 350px;
+    /* border: 2px solid rgb(16, 13, 13); */
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.action-slider{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    height: 220px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+.action-slider-item h2{
+    text-align: center;
+}
+.action-slider-item p{
+    text-align: center;
+}
+.action-slider-item button{
+    background-color: var(--rouge);
+    border: none;
+    width: 40%;
+    color: white;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+/* fin css du contenu */
+
+
+/* debut media queries */
+@media screen and (width <= 900px) {
+    .action-item, .action-item1{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 80%;
+       
+    }
+    .action-item img, .action-item1 img {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .action-item-text, .action-item1-text {
+        margin-bottom: 20px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .action-banniere-carte{
+        display: grid;
+        grid-template-columns: auto ;
+        row-gap: 30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .action-banniere-carte-item{
+        width: 250px;
+    }
+    .action-banniere h1{
+        font-size: 60px;
+    }
+    .action-slider{
+        height: auto;
+    }
+    .action-slider-item button{
+      margin-bottom: 20px;
+    }
+}
+@media screen and (width <= 390px) {
+    .action-item, .action-item1{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 80%;
+       
+    }
+    .action-item img, .action-item1 img {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .action-item-text, .action-item1-text {
+        margin-bottom: 20px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .action-banniere-carte{
+        display: grid;
+        grid-template-columns: auto ;
+        row-gap: 30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .action-banniere-carte-item{
+        width: 250px;
+    }
+    .action-banniere h1{
+        font-size: 60px;
+    }
+    .action-slider{
+        height: auto;
+    }
+    .action-slider-item button{
+      margin-bottom: 20px;
+      width: 50%;
+      font-size: 13px;
+    }
+}
+/* fin media queries */

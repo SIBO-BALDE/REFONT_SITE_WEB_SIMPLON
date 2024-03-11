@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Lien booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+    
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+    
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="../header-footer/header.css">
+    <link rel="stylesheet" href="../header-footer/footer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="numeriqueInclusif.css">
+</head>
+<body>
+
+    <!-- section header -->
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+    <!-- <header class="" id="header">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+            <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">
+                        Accueil
+                    </a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="#">Développement d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a></li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="#">Personnes en situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="#">Nos actions pour les refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Former ses salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header> -->
+    
+    <!-- end header -->
+
+    <!-- main -->
+
+    <main>
+        <!-- section banner -->
+        <section class="row banner mb-3 ">
+            <div class="col-12 col-sm-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.freepik.com/photos-premium/femme-afro-americaine-dans-fauteuil-roulant-beneficiant-journee-au-parc-sa-famille-tout-utilisant-telephone-mobile-ensemble_58466-15572.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=ais"
+                                class="d-block w-100" alt="...">
+                           
+                                <div class="carousel-caption  d-md-block">
+                                    <h4 style="font-weight: 500;font-size: 50px;">Nos actions pour un numérique inclusif</h4>
+                                    <p>Par sa mission sociale, Simplon.co oeuvre pour un numérique solidaire, responsable et plus inclusif au service des
+                                    personnes éloignées de l’emploi et des territoires les plus défavorisés.</p>
+                                </div>
+                        </div>    
+                       
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/photos-gratuite/personnes-travaillant-ensemble-vue-laterale_23-2149546168.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=ais"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption  d-md-block">
+                                <h4 style="font-weight: 500; font-size: 50px;">Nos actions pour un numérique inclusif</h4>
+                                <p>Par sa mission sociale, Simplon.co oeuvre pour un numérique solidaire, responsable et plus inclusif au service des
+                                personnes éloignées de l’emploi et des territoires les plus défavorisés.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/photos-gratuite/etudiants-qui-etudient-ensemble-coup-moyen_23-2148913227.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=ais"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption  d-md-block">
+                                <h4 style="font-weight: 500;font-size: 50px;">Nos actions pour un numérique inclusif</h4>
+                                <p>Par sa mission sociale, Simplon.co oeuvre pour un numérique solidaire, responsable et plus inclusif au service des
+                                personnes éloignées de l’emploi et des territoires les plus défavorisés.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="raccoursi d-flex justify-content-center align-items-center"><a href="../accueil/accueil.html">Accueil &nbsp; / &nbsp; </a><a href="#" class="border-bottom">A propos</a></div>
+        </section>
+
+
+        <!-- end banner -->
+
+        <!-- section text -->
+        <section class="description container shadow-lg mb-3">
+            <div class="d-flex justify-content-center text-center my-4">
+                <h4 style="font-size: 40px;color: var(--rouge);">Nos actions pour
+                un numérique inclusif</h4>
+            </div>
+            <div class=" row mx-2">
+                <p>Au coeur du projet de Simplon.co : le numérique comme levier d’inclusion, d’insertion et d’emploi, mais également un
+                catalyseur de mixité, de diversité et d’innovation sociale.</p>
+                <p>Simplon.co met ainsi son énergie au service de l’inclusion de publics spécifiques (personnes en situation de handicap,
+                réfugiées, femmes, jeunes non diplômés, primo-arrivants, etc.) au sein des formations Simplon tout en favorisant autant
+                que possible la mixité de genre, d’âge et d’origines sociale et géographique.</p>
+                <p>Cette approche très élargie de la diversité est au bénéfice des progressions pédagogiques individuelles de chacun des
+                Simploniens et un parti-pris clair au coeur de l’ADN de Simplon. C’est également pour cela que nos Fabriques sont
+                implantées dans les territoires ruraux, en Outre-mer et pas seulement dans les quartiers populaires et les grandes
+                agglomérations.</p>
+            </div>
+            
+
+        </section>
+        <section class="description container shadow-lg mb-3 ">
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <h4 style="font-size: 40px;color: var(--rouge);">Nos programmes</h4>
+            </div>
+            <div class=" row mx-4 ">
+                <p>out en favorisant la mixité sociale au sein de ses formations gratuites, Simplon s’adresse de manière spécifique
+                    à
+                    certains publics éloignés de l’emploi et du numérique. </p>
+                    <p> Décryptage de nos actions à destination de ces publics
+                    dits
+                    spécifiques et des territoires fragiles.</p>
+            </div>
+        </section>
+
+        <!-- end section text -->
+
+        <!-- section modalitepratique -->
+        <section class="container mb-4">
+            <div class="d-flex justify-content-center text-center mb-3" style="color: var(--rouge);">
+                <h4 style="font-size: 40px;">Modalites pratiques pour une communaute engagee en faveur de l'inclusion numerique</h4>
+            </div>
+            <div class=" container modalite">
+                <div class="box shadow-lg" style="height: 450px;">
+                    <div class="image">
+                        <img src="https://simplon.co/uploads/bintou-1.jpg">
+                    </div>
+                    <h6 class="mb-0" style="font-weight: bold;">Femmes</h5>
+                    <p>Acteur de la (trans)formation numérique, inclusive et solidaire, Simplon.co mène des actions de (re)valorisation des
+                    Femmes dans la Tech.​​​​​​Nous travaillons également à déconstruire les stéréotypes de genre.</p>
+                    <div class="btns">
+                    
+                        <a href="../nos-actions-pour-les-femmes/actionfemme.html"><button>DECOUVREZ NOS ACTIONS</button></a>
+                    </div>
+            
+                </div>
+                <div class="box shadow-lg" style="height: 450px;">
+                    <div class="image">
+                        <img src="https://simplon.co/uploads/Migrations/apprenant-refugeeks.jpg" alt="">
+                    </div>
+                   
+                    <h6 class="mb-0 " style="font-weight: bold;">Migrations</h6>
+                    
+                    <p>Soutenu par ses partenaires, Simplon.co oeuvre depuis 2016 pour l‘inclusion socio-professionnelle des
+                        personnes étrangères en leur proposant une offre de formation adaptée à leurs besoins : </p>
+                        
+                        <div class="btns ">
+                        
+                            <a href="../actions-ressortissants/actions.html"><button>DECOUVREZ NOS ACTIONS</button></a>
+                        </div>
+            
+                </div>
+                <div class="box shadow-lg" style="height: 450px;">
+                    <div class="image">
+                        <img src="https://simplon.co/uploads/mini_site_thematique.jpg" alt="">
+                    </div>
+                    <h6 class="mb-0" style="font-weight: bold;">Handicap et accessibilité numérique</h5>
+                    <p>À travers notre programme "Simplon for All" soutenu par la Fondation FDJ, nous visons l’intégration dans nos
+                        formations
+                        et l’insertion professionnelle de personnes en situation de handicap.</p>
+                        <div class="btns">
+                        
+                            <a href="../hadicap/handicap.html"><button>DECOUVREZ NOS ACTIONS</button></a>
+                        </div>
+            
+                </div>
+                <div class="box shadow-lg" style="height: 450px;">
+                    <div class="image">
+                        <img src="https://simplon.co/uploads/programmes_16-24.jpg" alt="">
+                    </div>
+                    <h6 class="mb-0" style="font-weight: bold;">18-25 ans</h5>
+                    
+                    Simplon.co accompagne les jeunes de 18 à 25 ans sans emploi, ni formation ou stage en cours dans l'acquisition d’un
+                    socle de compétences numériques fondamentales et dans leur projet professionnel.
+                        <div class="btns">
+                        
+                            <button>DECOUVREZ NOS ACTIONS</button>
+                        </div>
+            
+                </div>
+                <div class="box shadow-lg" style="height: 450px;">
+                    <div class="image">
+                        <img src="https://simplon.co/uploads/programmes_kids.jpg"
+                            alt="">
+                    </div>
+                    <h6 class="mb-0" style="font-weight: bold;">Enfants</h5>
+                    
+                    A travers des ateliers d’initiation au code,
+                    ​​​​​​​le programme Simplon Kids sensibilise les enfants et les jeunes filles en particulier à la question du genre et
+                    de la présence des femmes dans le secteur de la tech.
+                        <div class="btns">
+                        
+                            <button>DECOUVREZ NOS ACTIONS</button>
+                        </div>
+            
+                </div>
+                <div class="box shadow-lg" style="height: 450px;">
+                    <div class="image">
+                        <img src="https://simplon.co/uploads/M%C3%A9diation%20num%C3%A9rique/M%C3%A9diation-num%C3%A9rique.jpg"
+                            alt="">
+                    </div>
+                    <h6 class="mb-0" style="font-weight: bold;">Médiation numérique</h5>
+                    <p>
+                        Le programme Médiation numérique de Simplon.co, vise à lutter contre l’exclusion numérique des personnes éloignées de
+                    l'emploi et de la formation.​​​​​​​</p>
+                    <br><br>
+                    
+                        <div class="btns">
+                           
+                            <button>DECOUVREZ NOS ACTIONS</button>
+                        </div>
+            
+                </div>
+            </div>
+        </section>
+        <!-- end section modalite pratique -->
+
+        <!-- section foundation -->
+            <section class="container mb-4">
+              
+                    <div class="card shadow-sm container">
+                        
+                            <div class=" mb-3 " style="max-width: 1500px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="https://simplon.co/uploads/Site%20national/Images%20stock/Simplon-fondation-montreuil.png"
+                                            alt="" class="img-fluid rounded-start">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h4 style="font-weight: bold;">SimplonFoundation & Simplon Asso</h4>
+                                            "Ce qui permet la R&D dans l’innovation sociale, c’est souvent la philanthropie, qui finance les pilotes, rend possible
+                                            ses premiers pas, et accélère la promotion d'un numérique inclusif. Pour créer toujours plus d’impacts nous avons créé
+                                            Simplon Foundation - fonds de dotation à la fois collecteur et redistributeur - en fin 2019, et Simplon.asso,
+                                            association opératrice en 2020. Le but est de soutenir nos actions d’accompagnement social des publics fragiles mais
+                                            aussi de s’ouvrir plus largement à tous ceux qui veulent faire avancer la tech responsable et utile aux personnes et à
+                                            la planète" Frédéric Bardeau, Président de la Simplon Foundation.
+                                            Le fonds de dotation Simplon Foundation et l’association Simplon Asso promeuvent ensemble un numérique solidaire,
+                                            inclusif et éco-responsable au service des humains et de la nature.
+                                            <div class="mt-2">
+                                                <button type="button" class="bouttonActions btn  btn-custom btn-md">DECOUVREZ
+                                                    NOS ACTIONS</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                    </div>
+                
+            </section>
+            <section class=" container mb-4">
+                
+                    <div class=" card shadow-sm mb-3 " style="max-width: 1500px;">
+                            
+                                <div class="row g-0">
+                                    <div class="col-md-6  ">
+                                        <div class="card-body">
+                                            <h4 style="font-weight: bold;">Simplon Lab</h4>
+                                            Espace de 120 m² dédié à la formation, à l'innovation et à la fabrication digitale. Le Simplon Lab est une structure de
+                                            l'école Simplon.co. Avec son offre entreprise il s'adresse à toutes les structures qui souhaitent accéder à cet espace
+                                            inspirant.
+                                            Le Simplon Lab propose des services adaptés aux besoins et aux enjeux de chaque entreprise.​​​
+                                            <div class="d-flex justify-content-center mt-4">
+                                                <button type="button" class="bouttonActions btn btn-custom btn-md">VISITEZ LE SIMPLON LAB</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <img src="https://simplon.co/uploads/Site%20national/LAB.png" alt=""
+                                            class="img-fluid rounded-start">
+                                    </div>
+                                </div>
+                    </div>
+                
+            </section>
+        
+
+        <!-- end section foundation -->
+
+    </main>
+
+    <!-- end main -->
+
+
+
+
+
+
+
+    <!-- section footer -->
+    <footer class=" text-center text-lg-start  text-muted ">
+        <!-- Section: Social media -->
+        <section class="antifaq container-fluid ">
+            <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+                <div class="row">
+                    <div class="col-lg-4">
+                        <span class="">Vous avez une question?</span><br>
+                        <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+    
+                    </div>
+                    <div class="col-lg-4 ms-auto  Inputbutton ">
+                        <span>Inscrivez-vous a la newsletter</span><br>
+                        <div class="newletter">
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+        </section>
+    
+    
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-lg-8 ">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6 ">
+                                <h4 class="  mb-4 ">
+                                    Pages
+                                </h4>
+                                <ul>
+                                    <li><a href="../devenir-formateur/formateur.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Devenir formateur</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Rejoindre notre equipe</a></li>
+                                    <li><a href=""><a href="../blog/blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Blog</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Plan du site</a></li>
+    
+                                </ul>
+    
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                <ul>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Presse</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Simplon foundation</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Accessibilite</a></li>
+                                    <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Mention legales</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    
+                                    
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    
+                                </div> -->
+    
+                    </div>
+    
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+    
+    
+    
+                    <!-- Grid column -->
+                    <div class="col-12 col-sm-12 col-lg-4">
+                        <div class="">
+                            <!-- Links -->
+                            <h4 class=" mb-4">Contact</h4>
+                            <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34
+                                Avenue,Batiment D a Grenoble </p>
+                            <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                Email:info@example.com
+                            </p>
+    
+    
+                        </div>
+    
+                    </div>
+    
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <hr class="container traitfooter">
+        <div class="text-center ">
+            © Design par Groupe-1 .Tout droit reserve
+    
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- end footer -->
+    
+</body>
+</html>

@@ -1,0 +1,205 @@
+.banier{
+    border: 1px solid #000;
+    background-image: url(../public/image/cop.PNG);
+    padding: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 768px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .banier{
+        width: auto;
+        padding: 100px;
+        /* margin: 0 auto; */
+        margin-top: 15%;
+
+    }
+    
+}
+.cours{
+    /* border: 1px solid #000; */
+    width: 35%;
+    margin-left: 30%;
+    margin-top: -10%;
+    padding: 5px;
+    background-color: rgb(194, 191, 191);
+    margin-bottom: -10%;
+
+}
+@media screen and (max-width: 768px) {
+    .cours{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+}
+.cours h5{
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    color: white;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px){
+    .formations{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+     #formation{
+        width: 100%;
+     }
+     #btn{
+        width: 100%;
+     }
+}
+.formations{
+    /* border: 1px solid #000; */
+    background-color: rgb(194, 191, 191);
+    position: relative;
+    padding: 30px;
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 10%;
+}
+.formations input{
+    padding: 20px;
+    margin: 5%;
+    /* border: 1px solid #000; */
+    margin-left: 0%;
+    width: 30%;
+}
+.formations button{
+    padding: 20px ;
+    width: 20%;
+    background-color: #000;
+    color: white;
+}
+.contact{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(194, 191, 191);
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 1%;
+}
+/* responsive */
+    @media screen and (max-width: 768px) {
+        .contact{
+            display: grid;
+            grid-template-columns: auto;
+            width: auto;
+        }
+    }
+.donnees{
+    /* border: 1px solid #000; */
+    width: 90%;
+    margin-left: 9%;
+    margin-right: 10%;
+    margin-top: 2%;
+    background-color: white;
+    width: 50%;
+    padding-right: -50px;
+    margin-bottom: 2%;
+}
+/* responsive */
+@media screen and (max-width: 768px){
+    #donne{
+        display: grid;
+        grid-template-columns: auto;
+        width: 80%;
+        padding: 45px;
+        margin-top: 5%;
+    }
+    
+}
+
+.contact label{
+    margin-left: 5%;
+
+}
+.contact  input,textarea{
+    margin-top: 5%;
+    background-color: rgb(194, 191, 191);
+    width: 90%;
+    padding: 1px;
+    margin-left: 2%;
+}
+@media screen and (max-width: 768px){
+    .contact input,textarea{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .contact{
+        height: 600%;
+        width: 80%;
+    }
+}
+.contact textarea{
+    margin-left: 5%;
+
+}
+.contact button {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15%;
+    width: 30%;
+    background-color: rgb(124, 53, 53);
+    color :white;
+}
+.info{
+    /* border: 1px solid #000; */
+    width: 50%;
+    background-color: white;
+   
+}
+@media screen and (max-width: 768px) {
+    .info{
+        width: 80%;
+        padding: 6px;
+        margin-left: 9%;
+        margin-bottom: 2%;
+    }
+    
+}
+.info span,h2{
+    margin-left: 5%;
+    margin-top: 100px;
+}
+.icone{
+    /* border: 1px solid #000;  */
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.localisation{
+    /* border: 1px solid #000;  */
+    /* width: 100%; */
+    margin-left: 9%;
+    
+
+}
+.localisation iframe{
+    width: 89%;
+    margin-top: 2%;
+}
+.localisation h2{
+    text-align: center;
+    margin-top: 3%;
+    margin-right: 20%;
+    font-size: 20px
+}
+@media screen and (max-width:768){
+    .localisation iframe{
+        width: auto;
+        margin: 0 auto;
+    }
+}
+    

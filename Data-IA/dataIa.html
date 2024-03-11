@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Lien booststrap -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+         crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+         crossorigin="anonymous"></script>
+            <!-- Favicon -->
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+            <!-- Fin favicon -->
+        
+            <!-- Bootstrap Icon -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+            <!-- Fin bootstrap Icon -->
+        
+            <!-- Fontawsome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- Fin fontawsome -->
+            <link rel="stylesheet" href="dataIa.css">
+            <link rel="stylesheet" href="../header-footer/header.css">
+            <link rel="stylesheet" href="../style/style.css">
+            <link rel="stylesheet" href="../header-footer/footer.css">
+    <title>Document</title>
+</head>
+<body>
+      <!-- debut header -->
+     <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+      <!-- <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <img src="../public/logo/logo.png" alt="">
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                <a href="../accueil/accueil.html" style="color: black;">
+                    Accueil
+                </a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="#">Notre réseau de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="#">Développement d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a></li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="#">Personnes en situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="#">Nos actions pour les refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Former ses salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function() {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function() {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+        
+    </header> -->
+    <!-- fin header -->
+
+
+    <!-- début contenu -->
+    <div class="cloud-banniere">
+        <h4 style="font-size: 50px; color: white; font-weight: bold;">Data et intelligence artificielle</h4>
+        <p><span><a href="#">Accueil &nbsp;/</span><span> &nbsp; Nos formations &nbsp;/</span> <span> &nbsp; Data-IA</span></a></p>
+    </div>
+    <div class="cloud-text">
+        <h4 class="text-center">C'est quoi le data et l'intelligence artificielle</h4 >
+        <img src="data:image/png;base64,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" alt="">
+        <p>La culture numérique renvoie d'abord à toute forme de production originale d’une œuvre culturelle à l’aide des
+        technologies numériques, et en particulier des technologies de l’information et de la communication.
+        </p>
+    </div>
+    <div class="container cloud-carte">
+        <h4 class="text-center" >Data Intelligence artificielle</h4>
+        <div class=" cloud-carte-card d-flex justify-content-center gap-4 p-2">
+            <div class="card" style="width: 30rem;">
+                <img src="https://img.freepik.com/photos-gratuite/concept-transformation-numerique-fond-puce-technologie-ia_53876-124669.jpg?size=626&ext=jpg&ga=GA1.2.359486737.1694125754&semt=ais" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">École IA Microsoft By Simplon - Développeur-se en intelligence artificielle</h5>
+                  <p class="card-text">Le métier de développeur-se en Intelligence Artificielle prend une importante croissance dans les nouveaux métiers de la
+                data et l’IA puisque le recours à l’IA s’industrialise dans les entreprises et les organisations.</p>
+                  <a href="../developpeur-ia/developpeuria.html" class="cloud-bouton btn">Découvrir la formation</a>
+                </div>
+              </div>
+            <div class="card" style="width: 30rem;">
+                <img src="https://img.freepik.com/photos-gratuite/concept-collage-reconnaissance-faciale_23-2150038883.jpg?size=626&ext=jpg&ga=GA1.2.359486737.1694125754&semt=ais" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AI Business School TPE/PME</h5>
+                  <p class="card-text">Microsoft a mis en place des AI Business Schools, dont l'objectif est de permettre aux dirigeants et dirigeantes
+                d'entreprises et aux décideurs et décideuses de se former aux fondamentaux de l'intelligence artificielle et d'en
+                comprendre les enjeux et les stratégies associées.</p>
+                  <a href="#" class="cloud-bouton btn">Découvrir la formation</a>
+                </div>
+              </div>
+        </div>
+        <div class=" cloud-carte-card d-flex justify-content-center gap-4 p-2">
+            <div class="card" style="width: 30rem;">
+                <img src="https://img.freepik.com/vecteurs-libre/visualisation-abstraite-donnees-volumineuses-resume-poutres-colorees-rougeoyantes_1217-2379.jpg?size=626&ext=jpg&ga=GA1.2.359486737.1694125754&semt=ais" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SAS de pré-qualification aux métiers du numérique - Intelligence Artificielle</h5>
+                  <p class="card-text">Cette formation pré-qualifiante a pour objectif d’initier aux compétences professionnelles en développement
+                d’applications, notamment à l’aide de CMS, des technologies web et de Python.
+                Cette initiation concerne toutes les étapes du cycle de vie d’une application et les outils techniques d’un développeur
+                et d'une développeuse en intelligence artificielle.</p>
+                  <a href="#" class="cloud-bouton btn">Découvrir la formation</a>
+                </div>
+              </div>
+            <div class="card" style="width: 30rem;">
+                <img src="https://t4.ftcdn.net/jpg/06/01/21/81/240_F_601218123_ihzXtjYuJWUtosEBfDUlWlMaRj1MQPG8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Administrer avec la méthode de data et intelligence artifiicielle - Spécialisation</h5>
+                  <p class="card-text">La méthode de data et intelligence artifiicielle est une approche qui vise à améliorer la collaboration et la communication entre les équipes de data et intelligence artificielle</p>
+                  <a href="#" class="cloud-bouton btn " id="decForm">Découvrir la formation</a>
+                </div>
+              </div>
+        </div>
+        <!-- <div class=" cloud-carte-card d-flex justify-content-center gap-4 p-2">
+            <div class="card" style="width: 30rem;">
+                <img src="https://img.freepik.com/vecteurs-libre/design-plat-devops-illustration_23-2149364438.jpg?size=626&ext=jpg&ga=GA1.2.12207566.1692912950&semt=sph" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Administrer avec la méthode de data et intelligence artifiicielle - Spécialisation</h5>
+                  <p class="card-text">La méthode de data et intelligence artifiicielle est une approche qui vise à améliorer la collaboration et la communication entre les équipes de data et intelligence artificielle</p>
+                  <a href="#" class="cloud-bouton btn">Découvrir la formation</a>
+                </div>
+              </div>
+            <div class="card" style="width: 30rem;">
+                <img src="https://img.freepik.com/vecteurs-libre/symbole-infini-effet-lumineux_23-2147854724.jpg?size=626&ext=jpg&ga=GA1.2.12207566.1692912950&semt=sph" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Administrer avec la méthode de data et intelligence artifiicielle - Spécialisation</h5>
+                  <p class="card-text">La méthode de data et intelligence artifiicielle est une approche qui vise à améliorer la collaboration et la communication entre les équipes de data et intelligence artificielle</p>
+                  <a href="#" class="cloud-bouton btn">Découvrir la formation</a>
+                </div>
+              </div>
+        </div> -->
+    </div>
+
+    <!-- fin contenu -->
+
+
+     <!-- début footer -->
+     <footer class=" text-center text-lg-start  text-muted ">
+        <!-- Section: Social media -->
+        <section class="antifaq container-fluid ">
+            <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                <div class="row ">
+                    <div class="col-12 col-xs-12 col-sm-12  col-lg-5 ">
+                        <span class="">Vous avez une question?</span><br>
+                        <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-lg-4 ms-auto  Inputbutton ">
+                        <span>Inscrivez-vous a la newsletter</span><br>
+                        <div class="newletter ">
+                            <input type="email" placeholder="Enter votre email" class="inputEmail  shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="d-lg-block">
+                    <span class="mt-1">Vous avez une question?</span><br>
+                    <button type="button"  class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+                </div>
+                 Left -->
+        
+                <!-- Right
+                <div class="Inputbutton">
+    
+                    <span>Inscrivez-vous a la newsletter</span><br>
+                    <input type="email" placeholder="Enter votre email" class="inputEmail shadow mt-1">
+                    <button type="button" class="btnInscrire mt-2 shadow ">S'INSCRIRE</button>
+                </div> -->
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+        </section>
+        
+    
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-lg-8 ">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6 ">
+                                <h4 class="  mb-4 ">
+                                    Pages</h4>
+                                    
+                                <ul>
+                                    <li><a href="../devenir-formateur/formateur.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                        viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg>Devenir formateur</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Rejoindre notre equipe</a></li>
+                                    <li><a href=""><a href="../blog/blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Blog</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Plan du site</a></li>
+                                
+                                </ul>
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                <ul>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Presse</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Simplon foundation</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Accessibilite</a></li>
+                                    <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Mention legales</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            
+                            
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            
+                        </div> -->
+
+                    </div>
+                    
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    
+                    <!-- Grid column -->
+
+                  
+    
+                    <!-- Grid column -->
+                    <div class="col-12 col-sm-12 col-lg-4 ">
+                        <div class="">
+                            <!-- Links -->
+                            <h4 class=" mb-4">Contact</h4>
+                            <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34 Avenue,Batiment D a
+                                Grenoble </p>
+                            <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88</p>
+                            <p>
+                                <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                Email:info@example.com
+                            </p>
+                        
+                        
+                        </div>
+
+                    </div>
+                    
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <hr class="container traitfooter">
+        <div class="text-center " >
+            © Design par Groupe-1 .Tout droit reserve
+            
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- fin footer -->
+</body>
+</html>

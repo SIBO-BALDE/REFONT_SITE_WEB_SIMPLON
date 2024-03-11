@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <!-- Lien booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="anti-faq.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+ 
+    <main id="main">
+        <div class="banner">
+            <div class="content-banner">
+                <h4>Anti-FAQ</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptas pariatur itaque consequatur eius perspiciatis aspernatur? Consequuntur distinctio, nulla pariatur consectetur quos nihil molestias quam amet delectus enim deserunt in?</p>
+                <div class="chemin">
+                    <span>Acueil / A propos / Anti-FAQ</span>
+                </div>
+            </div>
+        </div>
+        <div class="section-antifaq">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="desc-antifaq d-flex justify-content-between flex-wrap">
+                    <h3>Aller plus loin</h3>
+                    <form action="">
+                        <label for="">Filtre</label>
+                        <select name="" id="selection">
+                            <option value="10" selected>Liste</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="accordion-item formation">
+                    <h2 class="accordion-header">
+                        <button class="list-antifaq accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Simplon est elle la première et dernière formation en son genre ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Bien qu’elle se distingue par son format à la fois intensif, vraiment gratuit (voir « gratuité »), tourné vers les
+                            
+                            publics éloignés de l’emploi et sous-représentés dans le numérique, Simplon n’est pas la première formation
+                            
+                            de ce type, ni la seule.
+                            
+                            Tout d’abord, plusieurs autres formations existaient déjà en France avant l’apparition de Simplon.co en 2013,
+                            
+                            comme la Web@cadémie, R2K, 3WAcadémie ou encore Cefim et bien d’autres dans les territoires…Par la
+                            
+                            suite, d'autres se sont créées simultanément à Simplon, comme Le Wagon, l’Ecole 42, Webforce3...Puis, des
+                            
+                            formations se sont créées au contact de Simplon (copycats, forks ou franchisés s’étant autonomisés) : Wild
+                            
+                            Code School (auparavant Simplon Village dans le Perche), Pop School, Access Code School ou Pôle S,...Enfin,
+                            
+                            des formations se sont mises en place dans le sillage du dispositif Grande École du Numérique et complètent
+                            
+                            cette liste. Toutes sont intéressantes, certaines sont innovantes, et si Simplon.co présente la particularité de
+                            
+                            proposer la gratuité et l’approche par compétence en pédagogie active prioritairement aux publics les plus
+                            
+                            éloignés, nous formons ensemble une véritable filière, riche et complémentaire.En effet, nous fournissons des
+                            
+                            solutions différentes, parfois articulées en fonction de leur durée (entre 3 mois et 3 ans), des métiers visés
+                            
+                            (développeur, data analyste, technicien IA, etc.), des technologies (C, PHP, Ruby, Java,…), de leur pédagogie
+                            
+                            (descendante ou active, avec ou sans formateurs physiques, présentielle et distancielle)...</p>
+                            <p>Toutes ne visent pas les mêmes publics et la plupart sont concentrées dans les grandes agglomérations alors
+                            
+                            que d’autres visent les territoires fragiles.Parmi elles, Simplon.co propose une identité unique en son genre,
+                            
+                            en s’ouvrant véritablement à tous (sans distinction d’âge, de niveau scolaire et d’origine territoriale) et en
+                            
+                            proposant des formations intégralement gratuites.De la même façon, Simplon intègre depuis son origine une
+                            
+                            préoccupation centrale autour de la représentation des effectifs féminins dans ces métiers du numérique. Sa
+                            
+                            place dans des territoires complexes en lien avec la géographie prioritaire, la ruralité, les Outre-mer ou
+                            
+                            l’international est rarement discutée, notamment du fait de son implantation dans les zones les plus
+                            
+                            fragilisées et de sa croissance. Enfin, certains de ses piliers pédagogiques comme le « learning by teaching »
+                            
+                            sont également très caractéristiques et originaux.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ac accordion-item social">
+                    <h2 class="accordion-header">
+                        <button class="list-antifaq accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Quelle est la difference entre simplon.co et 42 ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Il s’agit de la question la plus fréquente qu’on nous pose, et notre réponse reste inchangée depuis le lancement
+                            conjoint de Simplon et de l'École 42 qui ont été quasi simultanés en 2013. Si les deux concepts comportent effectivement
+                            beaucoup de ressemblances, elles ont aussi leurs particularités.
+                            Elles sont similaires, car nous appartenons à la même “vague”, à la même démarche visant à innover pour résoudre
+                            l’absurdité patente entre un besoin de compétences non satisfait et des talents potentiels au chômage en manque de
+                            formation.
+                            Similaires, car elles sont gratuites et que désormais l'École 42 n’a plus de limite d’âge ; similaires, enfin, parce que
+                            l’on y trouve une volonté d’innovation pédagogique.</p>
+                            <p>Mais les deux structures ont aussi leurs différences, notamment sur les formations qu’elles proposent : si l'École 42
+                            choisit de viser un public plus exclusif, les séniors multi-poly-compétents, Simplon forme également des apprenants plus
+                            jeunes.
+                            La durée de formation diffère aussi, s’étendant sur 2 à 3 ans pour l’Ecole 42 contre 7 mois en moyenne chez Simplon.
+                            Les deux entreprises ne procèdent pas à leurs sélections selon les mêmes critères : ceux-ci peuvent être par exemple
+                            moins élitistes et plus inclusifs chez Simplon.co, visant particulièrement les femmes, les personnes en difficulté ou
+                            encore les territoires déclassés.</p>
+                            <p>Enfin, la question du présentiel les différencie une nouvelle fois, dans la mesure où les professeurs de Simplon sont
+                            présents en permanence et animent leurs formations au sein des Fabriques en présentiel, ou en téléprésentiel.
+                            
+                            Sur le modèle économique, grosse différence aussi : les dirigeants de Simplon ne sont pas milliardaires et donc ne
+                            peuvent s’affranchir d’un modèle économique. Nos différences n’empêchent pas une véritable entente et collaboration
+                            entre les deux projets : les apprenants basculent entre elles selon leurs parcours, certains étudiants de l’Ecole 42
+                            étant même devenus professeurs à Simplon !</p>
+                            <p>Des liens particuliers se sont entretenus ; participation commune aux Hackathons, identité commune de “Grande École du
+                            Numérique”.. Certains opérateurs, comme OCP au Maroc, n’ont pas choisi et ont déployé nos deux modèles. “Born to code”
+                            (Ecole 42) et “In Code We Trust” ou “Shift to digital inclusion” (Simplon), malgré leurs différences, continuent de se
+                            construire ensemble.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item informatique">
+                    <h2 class="accordion-header">
+                        <button class="list-antifaq accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Simplon.co, les eoles d'informatiques, les informaticiens.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Les formations Simplon.co sont complémentaires à l’offre de formation initiale existante et n’ont aucunement vocation à
+                                les critiquer ou à s’y substituer, bien au contraire. Des collaborations existent entre Simplon.co et 42, l'EPSI, les
+                                INSA et bien d’autres structures.
+                                De la même façon, Simplon.co a des interactions multiples avec certaines universités, certains IUT, avec l’INRIA au
+                                travers des démarches liées au programme des Investissements d’Avenir désireux de promouvoir la “culture du code”
+                                (CAPPRIO, Class’Code, etc.).
+                                En revanche, nous pensons véritablement que la programmation informatique n’est PAS QU’UNE science, c’est aussi un
+                                artisanat, une passion, un objet d’autodidaxie, et qu’elle n’est pas réservée aux informaticiens diplômés mais bien à
+                                tous les passionnés.
+                                Dans « Lire, écrire, compter, coder », Frédéric Bardeau, Président et cofondateur de Simplon.co, et Nicolas Danet
+                                reviennent sur ces subtilités et les différentes approches pédagogiques qui coexistent en France et dans le monde par
+                                rapport à l’apprentissage de la programmation informatique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item social">
+                    <h2 class="accordion-header">
+                        <button class="list-antifaq accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Simplon.co une organisation militante et partisane
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>L’essaimage de Simplon.co est toujours déclenché sur la base d’une manifestation d’intérêt de porteurs de projets locaux
+                            pouvant être des entrepreneurs, des organismes de formation, des collectivités, des structures parapubliques, ou en
+                            réponse à un appel d’offre régional (cf. Occitanie).
+                            Le processus de qualification de la demande, de sélection des projets d’essaimages et leur conduite suit des règles
+                            claires et contraignantes destinées à assurer la pertinence, le caractère multi-parties prenantes et la pérennité de la
+                            démarche.
+                            Ainsi, les porteurs des projets dont la configuration a été jugée viable à réception du dossier sont systématiquement
+                            invités à recenser les besoins des différents acteurs sur leur territoire et évoquer l’intérêt d’un projet d’essaimage
+                            Simplon.co : les acteurs numériques, économiques, de l’emploi et de la formation et les collectivités référentes sur la
+                            question de la formation professionnelle (villes, agglomérations, régions).<br><br>
+                            Dans ce contexte, si l’accompagnement par Simplon.co d’un porteur de projet pour essaimer fait l’objet d’une prestation
+                            forfaitaire facturée qui comprend une assistance de bout en bout : montage juridique et financier, aide au financement,
+                            recrutement de l’équipe locale, recrutement de la promotion, assistance pédagogique et en gestion de projet, évaluation
+                            et certification, etc.
+                            Ce “forfait” pourrait donc s’apparenter à une « franchise » mais la multiplicité des formats d’essaimages de Simplon.co
+                            l’en éloigne tant la variabilité des configurations (publics, durée, format, référentiels, etc.) est forte. Il n’y a pas
+                            deux « Simplons » qui se ressemblent, tous nos projets d’essaimage ne s’appellent pas forcément Simplon ce qui est
+                            intrinsèquement le contraire d’une franchise et même d’une licence de marque ou d’enseigne.
+                            En 2018, Simplon a dépassé le modèle de “franchise sociale” en libérant gratuitement en Creative Commons une partie de
+                            sa méthode via Simplon Open Commons, ce afin de démultiplier encore plus son impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header social">
+                        <button class="list-antifaq accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Simplon.co s'assaime comme une franchise 
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                            Soutenue au travers de subventions par les pouvoirs publics et les collectivités (l’Élysée via La France s’engage et
+                            Grande École du Numérique, Secrétariat d’État au numérique via le label French Tech ainsi que plusieurs régions et
+                            agglomérations dans les essaimages), Simplon.co est pour autant une organisation privée, non-partisane et n’est affiliée
+                            à aucun mouvement politique.
+                            Les prises de position de Simplon.co concernent le code pour tous, la parité femmes-hommes dans le numérique et
+                            l’Économie Sociale et Solidaire, la bataille pour l’emploi des jeunes, la revitalisation des territoires dont les
+                            quartiers populaires, les zones rurales et les Outre-mer, la lutte contre toutes les formes d’extrémisme politique ou
+                            religieux : c’est clairement militant.<br><br>
+                            Mais rien là dedans ne relève d’une approche partisane ou politicienne.
+                            Simplon.co est une entreprise sociale avec des convictions, pas un parti politique, ni un syndicat, ni une ONG et n’est
+                            affilié à aucune organisation autre que professionnelle. Mais c’est vrai, nous aimons lancer des débats, prendre la
+                            parole, faire du prosélytisme sur les thématiques qui nous sont chères. C’est notre façon de faire avancer les causes
+                            qui nous tiennent à coeur…
+                            Enfin, on peut dire que l’entrepreneuriat social est une forme déterminée d’engagement politique au sens où il tente
+                            d’intervenir sur la société.
+                            Dans ce sens là alors oui, Simplon fait de la politique ; et a rassemblé ses prises de positions et actions dans un
+                            livret de plaidoyer que vous pouvez lire ici et qui aborde 4 principaux axes : les publics, les territoires, le
+                            numérique responsable et la digitalisation de l’ESS et des TPE/PME.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let liste = document.querySelectorAll('.accordion-item');
+                let selection = document.getElementById('selection');
+                selection.addEventListener('change', function () {
+                    for (let i = 0; i < this.value; i++) {
+                        liste[i].style.display = 'block';
+                    }
+                    for (let i = this.value; i < liste.length; i++) {
+                        liste[i].style.display = 'none';
+                    }
+                });
+            </script>
+        </div>
+        <footer class=" text-center text-lg-start  text-muted ">
+            <!-- Section: Social media -->
+            <section class="antifaq container-fluid ">
+                <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="">Vous avez une question?</span><br>
+                            <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+        
+                        </div>
+                        <div class="col-md-4 ms-auto  Inputbutton">
+                            <span>Inscrivez-vous a la newsletter</span><br>
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <section class="border">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row ">
+                        <!-- Grid column -->
+                        <div class="col-lg-8 ">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-6 ">
+                                    <h4 class="  mb-4 ">
+                                        Pages
+                                    </h4>
+                                    <ul class="foot-ul">
+                                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Devenir formateur</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Rejoindre notre equipe</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Blog</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Plan du site</a></li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                    <ul>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Presse</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Simplon foundation</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Accessibilite</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Mention legales</a></li>
+                                    </ul>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="">
+                                <!-- Links -->
+                                <h4 class=" mb-4">Contact</h4>
+                                <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34
+                                    Avenue,Batiment D a
+                                    Grenoble </p>
+                                <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                    Email:info@example.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <hr class="container traitfooter">
+            <div class="text-center border">
+                © Design par Groupe-1 .Tout droit reserve
+        
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+</body>
+
+</html>

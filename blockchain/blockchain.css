@@ -1,0 +1,134 @@
+:root{
+    --rouge :#CE0033;
+    --bleu :#06114d8b;
+    --gris :#f6f6f6;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+#header{
+    box-shadow: 0 2px 12px #06114d8b
+}
+/* debut css de la banniere */
+.blockchain-banniere{
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/18/07/31/bitcoin-3089728_640.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+.blockchain-banniere::before{
+    content: '';
+    background-color: #06114d8b;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.blockchain-banniere h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    z-index: 2;
+}
+.blockchain-banniere p{
+    color: white;
+    font-weight: bold;
+    /* font-size: 80px; */
+    position: absolute;
+    z-index: 2;
+    top: 330px;
+}
+.blockchain-banniere p a{
+    color: white;
+}
+/* fin css de la banniere */
+
+/* debut css du contenu */
+.blockchain-text{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.blockchain-content{
+    margin-top: 70px;
+    margin-bottom: 90px;
+    /* overflow-x: scroll; */
+}
+.blockchain-content h2, .blockchain-content1 h2{
+    color: var(--rouge);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.blockchain-content-item{
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+}
+.blockchain-content-item p{
+    background-color: #f6f6f6;
+    border: 3px dashed var(--rouge);
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.blockchain-content-item2{
+    position: relative;
+    top: 100px;
+}
+.blockchain-content-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blockchain-content-item1 button{
+    background-color: var(--rouge);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.blockchain-content1{
+    margin-bottom: 80px;
+}
+/* .accordion-item{
+    margin-bottom: 30px;
+    height: 50px;
+    border: 1px solid var(--gris);
+} */
+/* fin css du contenu */
+
+/* media queries */
+@media screen and (width <= 900px) {
+    .blockchain-banniere h1{
+        font-size: 50px;
+    }
+    .blockchain-text{
+       width: 50%;
+       border: 2px solid #CE0033;
+    }
+    .blockchain-content-item{
+        flex-direction: column;
+    }
+    .blockchain-content-item2{
+        top: 50px;
+    }
+    .blockchain-content-item p{
+        width: 50%;
+    }
+}

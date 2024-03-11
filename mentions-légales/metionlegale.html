@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mentionlegale.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+    <!-- <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">
+                        Accueil
+                    </a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="#">Notre réseau de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="#">Développement d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a></li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="#">Personnes en situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="#">Nos actions pour les refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Former ses salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function() {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function() {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+        
+    </header> -->
+    <section class="container mlegal">
+        <div class="mlegal-banniere">
+            <h1>Mention Légale</h1>
+            <p><span><a href="../accueil/accueil.html">Accueil</a> &nbsp;/</span><span> &nbsp; Mention Légale</span></p>
+        </div>
+        <div class="mlegal-content">
+            <div class="mlegal-content1">
+                <h2>EDITEUR</h2>
+                <p>Site publié par Simplon.co
+                    SAS agréée ESUS au capital de 448.390 euros
+                    RCS Bobigny : 792 791 329 00016
+                    Enregistré en tant qu’organisme de formation auprès de la DIRECCTE Ile-de-France sous le numéro 11 93 06676 93. Cet enregistrement ne vaut pas agrément de l’État.</p>
+            </div>
+            <div class="mlegal-content1">
+                <h2>Responsable de la publication</h2>
+                <p>Frédéric Bardeau joignable sur inbox (at) simplon (point) co</p>
+            </div>
+            <div class="mlegal-content1">
+                <h2>Hébergement</h2>
+                <p>OVH, société par actions simplifiée dont le siège social est au 2 rue Kellermann, 59100 Roubaix et dont le numéro de téléphone est le 0820 698 765.
+                    Design, développement, intégration et déploiement​​​​​​​
+                    SimplonProd, l'agence web solidaire de Simplon.co</p>
+            </div>
+            <div class="mlegal-content1">
+                <h2>Siège social</h2>
+                <p>55 rue de Vincennes, 93100 Montreuil</p>
+            </div>
+            <div class="mlegal-content1">
+                <h2>Données personnelles et politique de confidentialité</h2>
+                <p>Données personnelles et politique de confidentialité. Les données personnelles recueillies dans le cadre du site de Simplon.co font l’objet d’un traitement par la SAS Simplon.co et ses filiales. Les formulaires présents sur notre site nous permettent de qualifier votre demande et de l'orienter vers les collaborateurs de Simplon.co qui seront à même d'y répondre. Vous pouvez choisir de ne pas nous fournir des données, mais certaines sont nécessaires à des fins d’orientation : candidature RH, candidature à une formation, contact presse, contact pour ouvrir une fabrique, etc. Les données personnelles collectées sont portées à connaissance des destinataire des formulaires (spécifique selon les formulaires) au sein des directions territoriales, du service formation, de la direction générale, et de la direction des ressources. Ces différents traitements de données se font sur différentes bases selon la nature des données collectées : des traitements opérés sur le fondement légal de l'exécution de nos obligations contractuelles, de votre consentement, et enfin sur le fondement de l'intérêt légitime (dont l’impact social) poursuivi par Simplon.co. En terme de sécurisation : sachez que vos données sont stockées sur des serveurs installés en Europe, que les accès à nos locaux sont sécurisés, et que l’ensemble de nos contrats de travail, nos contrats avec nos prestataires et nos contrat commerciaux ont été mis à jour afin d’y intégrer nos obligations de sous-traitants ou de responsables conjoints au sens du RGPD.</p>
+            </div>
+            <div class="mlegal-content1">
+                <p>Pour une meilleure prise en compte de l'égalité femmes-hommes et pour ne pas contribuer à la sous-représentation 
+                    des femmes dans la société, ce site web et l'ensemble des communications de Simplon font la part belle aux
+                    mécanismes du langage ouvert et de l'écriture inclusive. 
+                </p>
+            </div>
+            <div class="mlegal-content1">
+                <p>Nous favorisons donc autant que possible l'emploi des termes épicènes (dont la forme ne varie pas entre le féminin 
+                    et le masculin, comme collègues), de la double flexion féminin-masculin (collaborateurs et collaboratrices), l'accord
+                    de proximité (qui consiste à accorder les mots avec le terme le plus proche et non au masculin par défaut), et dans
+                    une moindre mesure l'utilisation des points (comme apprenant.es) pour ne pas alourdir la lecture. Pour des raisons
+                    RCS Bobigny : 792 791 329 00016             </div>
+        </div>
+    </section>
+    <footer class=" text-center text-lg-start  text-muted ">
+        <!-- Section: Social media -->
+        <section class="antifaq container-fluid ">
+            <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="">Vous avez une question?</span>
+                        <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+
+                    </div>
+                    <div class="col-md-4 ms-auto  Inputbutton">
+                        <span>Inscrivez-vous a la newsletter</span>
+                        <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                        <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- Section: Links  -->
+        <section class="border">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-lg-8 ">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6 ">
+                                <h4 class="  mb-4 ">
+                                    Pages
+                                </h4>
+                                <ul>
+                                    <li><a href="../devenir-formateur/formateur.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                        viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg>Devenir formateur</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Rejoindre notre equipe</a></li>
+                                    <li><a href="../blog/blog.html"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Blog</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Plan du site</a></li>
+                                
+                                </ul>
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                <ul>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Presse</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Simplon foundation</a></li>
+                                    <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Accessibilite</a></li>
+                                    <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Mention legales</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            
+                            
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            
+                        </div> -->
+
+                    </div>
+                    
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    
+                    <!-- Grid column -->
+
+                  
+    
+                    <!-- Grid column -->
+                    <div class="col-12 col-sm-12 col-lg-4">
+                        <div class="">
+                            <!-- Links -->
+                            <h4 class=" mb-4">Contact</h4>
+                            <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34 Avenue,Batiment D a
+                                Grenoble </p>
+                            <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88</p>
+                            <p>
+                                <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                Email:info@example.com
+                            </p>
+                        
+                        
+                        </div>
+
+                    </div>
+                    
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <hr class="container traitfooter">
+        <div class="text-center border" >
+            © Design par Groupe-1 .Tout droit reserve
+            
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>

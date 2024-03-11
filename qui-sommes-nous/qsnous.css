@@ -1,0 +1,361 @@
+:root{
+    --rouge :#CE0033;
+    --bleu :#06114d8b;
+    --gris :#f6f6f6;
+}
+/* Debut de la section header */
+#header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 2px 12px #06114d8b;
+}
+.header-top {
+    background-color: #F6F6F6;
+    border-bottom: 6px  solid var(--base-color);
+    padding: 0 7%;
+}
+.section-left {
+    gap: 10px;
+}
+@media screen and (max-width: 575.98px) {
+    .media-element {
+        transform: scale(0.8);
+    }
+    .section-left {
+        gap: 2px;
+    }
+}
+.media-element {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element  i {
+    /* color: black; */
+}
+.media-element:hover {
+    border-color: var(--base-color);
+    color: var(--base-color);
+    cursor: pointer;
+}
+.search-part {
+    border-radius: 10px;
+    padding: 0 8px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+.search-part input {
+    padding-left: 12px;
+    outline: none;
+}
+.search-part label {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.search-alternate {
+    display: none;
+    padding: 0 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767.98px) {
+    .search-part {
+        display: none;
+    }
+    .search-alternate {
+        display: block;
+    }
+    .search-alternate i:hover {
+        color: var(--base-color);
+    }
+}
+.search-part :first-child {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.lang {
+    font-weight: 700;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.lang span {
+    cursor: pointer;
+}
+.header-bottom {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0 7%;
+}
+.logo {
+    height: 50px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+.logo img {
+    height: 100%;
+}
+.menu-select {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    margin: 0 6px;
+}
+.menu-select:hover {
+    background-color: transparent;
+    color: var(--base-color);
+}
+.menu .sous-menu {
+    border-radius: 0;
+}
+.menu .burger-menu, 
+.hide-menu {
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+.menu .burger-menu i,
+.hide-menu i {
+    font-size: 1.6em;
+}
+@media screen and (min-width: 992px) {
+    .menu .burger-menu,
+    .hide-menu {
+        display: none;
+    }
+ }
+@media screen and (max-width: 991.98px) {
+    .menu .burger-menu i {
+        display: block;
+    }
+    .menu .nav-menu {
+        position: absolute;
+        z-index: 4;
+        left: 200%;
+        top: 40px;
+        transition: 1s;
+        background-color: #F6F6F6;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 7%;
+        padding-top: 40px;
+    }
+    .menu-select {
+        font-size: 1.4em;
+        margin: 12px 0;
+    }
+}
+
+.search-mobile {
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    height: 100px;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-mobile input:first-child {
+    padding-left: 10px;
+}
+/* Fin de la section hrgb(87, 0, 0)£*/
+
+/* debut css contenu */
+.qsnous{
+    position: relative;
+    top: 110px;
+}
+.qsnous-banniere{
+    background-image: url(https://img.freepik.com/photos-gratuite/instructeur-aidant-etudiants-cours-informatique_74855-2020.jpg?size=626&ext=jpg&ga=GA1.1.12207566.1692912950&semt=sph);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+.qsnous-banniere::before{
+    content: '';
+    background-color: #06114d8b;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.qsnous-banniere h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    z-index: 2;
+}
+.qsnous-banniere p{
+    color: white;
+    font-weight: bold;
+    /* font-size: 80px; */
+    position: absolute;
+    z-index: 2;
+    top: 330px;
+}
+.qsnous-banniere p a{
+    color: white;
+}
+.qsnous-content {
+    margin-top: 50px;
+}
+.qsnous-content h4, .qsnous-content-1 h4, .qsnous-content-2 h4, .qsnous-content-3 h4{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    color: var(--rouge);
+}
+/* .qsnous-line{
+    background-color: black;
+    width: 10%;
+    height: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+} */
+.qsnous-content p{
+    background-color: #f6f6f6;
+    padding: 20px 15px;
+    border-left: 3px solid var(--rouge);
+}
+.qsnous-content-1{
+    margin: 70px;
+    /* width: 80%; */
+    /* border: 1px solid rgb(0, 0, 0); */
+
+}
+.qsnous-filter{
+    margin: 50px;
+}
+.qsnous-edit{
+    width: 50%;
+    text-align: center;
+}
+.list-group-item-action.active {
+    background-color: var(--rouge);
+    color: white;
+    border: none;
+  }
+  
+.qsnous-edit:active{
+    background-color: none !important;
+    color: white;
+}
+.qsnous-edit:focus{
+    background-color: var(--rouge) !important;
+    color: white;
+}
+.qsnous-content-2-item{
+    display: flex;
+}
+.qsnous-content-3{
+    margin-top: 100px;
+}
+@media screen and (width <= 900px) {
+    .qsnous-banniere h1{
+        font-size: 60px;
+    }
+    .qsnous-filter{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .qsnous-edit{
+        width: 100%;
+    }
+    .qsnous-filt{
+        display: flex ;
+    }
+    .qsnous-content-2-item{
+        flex-direction: column;
+    }
+    .qsnous-content-2-item img{
+        width: 250px;
+        height: 250px;
+    }
+    .qsnous-content-1{
+        width: 80%;
+    
+    }
+}
+@media screen and (width <= 390px) {
+    .qsnous-edit{
+        width: 200%;
+        text-align: center;
+    }
+    
+}
+/* fin css contenu */
+/* css footer */
+.antifaq{
+    background-color: var(--rouge);
+}
+.inputEmail,.btnInscrire{
+    border: 1px solid var(--rouge);
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+.antifaq span{
+    color: white;
+    font-weight: bold;
+}
+.traitfooter{
+    color: var(--rouge);
+}
+ul li a{
+    color: var(--noir);
+}
+svg{
+    color: var(--rouge);
+}
+
+.point{
+    width: 1px;
+
+}
+footer h4{
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+}
+
+
+/* end css footer */
+
+/* responsive footer */
+@media screen and (width>= 390px){
+    .antifaq .container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+         
+}
+@media screen and (max-width:390px){
+    li svg{
+        display: none;
+    }
+    h6{
+        text-decoration: underline ;
+    }
+    
+}
+
+/* end responsive footer */

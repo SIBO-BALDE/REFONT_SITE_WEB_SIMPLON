@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <!-- Lien booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre
+                                    réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item"
+                                    href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence
+                                    artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma
+                                    formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos
+                                    actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour
+                                    les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+
+    </header>
+
+
+    <section id="accueil">
+        <div class="banner">
+            <div id="carouselExampleAutoplaying" class="banner-carrousel carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="content-banner-img">
+                            <img src="https://www.europe-energie.com/wp-content/uploads/2021/10/Comment_reduire_son_empreinte_numerique.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="desc-accueil carousel-caption d-md-block">
+                            <h5>Simplon, formations numériques</h5>
+                            <p>Simplon, l’école qui forme aux métiers du numérique dans toute la France et à
+                                l’international.
+                                Rejoignez un réseau de plus de 25 000 apprenants et apprenantes. Vous souhaitez vous
+                                aussi intégrer un parcours de formation Simplon ou être conseillé-e dans votre parcours
+                                ?</p>
+                            <div class="cta-banner">
+                                <a href="../contact/contact.html">Contactez-Nous</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content-banner-img">
+                            <img src="https://cdn.futura-sciences.com/cdn-cgi/image/width=1024,quality=50,format=auto/sources/images/numerique-ordi-tablette-.jpeg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="desc-accueil carousel-caption d-md-block">
+                            <h5>Simplon, intelligence artificielle</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur. Lacus ultrices ut gravida gravida. Condimentum
+                                lectus integer turpis ante laoreet donec. Lorem eu donec consequat ipsum. Ut dictum cras
+                                vitae mattis ut sed tempus.</p>
+                            <div class="cta-banner">
+                                <a href="../analyse-cybersécurité-spécialisation/cybersecurite.html">En Savoir Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nos formation Live coding -->
+        <div class="container">
+            <div class="pre-section">
+                <h4 class="title-section">Des formations pour le live coding</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- conteneur de notre formation -->
+            <div id="name-card" class="row name-card formation-container">
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="pre-section">
+                <h4 class="title-section">Des formations aux métiers du numerique</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="name-card" class="row name-card">
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="images/formation-1.jpg" alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Infrastructures et Cybersécurité</h5>
+                            <p>La cybersécurité est un enjeu stratégique pour toute entreprise en transition numérique.
+                                vous souhaitez rejoindre les rangs des métiers de la cybersécurité ?</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <a href="../dev-front/dev-front.html"><span id="cta" class="cta">DECOUVRIR NOS
+                                            FORMATIONS</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://simplon.co/uploads/Site%20national/Home-site-national/fili%C3%A8res/SIMPLON%20-%20Reportage%20_Grenoble.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Développement d'Application</h5>
+                            <p>Le métier de développeur-se web vous intéresse ?
+                                Vous voulez élargir vos compétences en développement web et mobile ?</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <a href="../dev-front/dev-front.html"><span id="cta" class="cta">DECOUVRIR NOS
+                                            FORMATIONS</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://simplon.co/uploads/Site%20national/Home-site-national/fili%C3%A8res/Formations_tech.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Fondamentaux Numériques</h5>
+                            <p>Le numérique change notre quotidien de plus en plus vite.
+                                Vous souhaitez vous former aux fondamentaux numériques ?</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <a href="../dev-front/dev-front.html"><span id="cta" class="cta">DECOUVRIR NOS
+                                            FORMATIONS</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://simplon.co/uploads/Site%20national/Home-site-national/fili%C3%A8res/Simplon-apprenants_dev.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Intelligence Artificielle et Data</h5>
+                            <p>IT, marketing, services clients...
+                                ​​​​​​​Les besoins en compétences Data et IA se multiplient dans les entreprises.
+                                ​​​​​​​Vous souhaitez devenir expert-e en Intelligence Artificielle ?</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <a href="../dev-front/dev-front.html"><span id="cta" class="cta">DECOUVRIR NOS
+                                            FORMATIONS</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://simplon.co/uploads/Site%20national/Home-site-national/fili%C3%A8res/Simplon-formation-methodes_agiles.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>Méthode Agiles</h5>
+                            <p>La formation Méthodes Agiles permet de gérer des projets rigoureusement tout en ajustant
+                                continuellement les tâches.
+                                Vous souhaitez développer vos compétences en gestion de projet agile ?</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <a href="../dev-front/dev-front.html"><span id="cta" class="cta">DECOUVRIR NOS
+                                            FORMATIONS</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-items col-12 col-lg-4 col-md-6 col-sm-12 p-3" id="card-items">
+                    <div class="card-content rounded-4 overflow-hidden" id="card-content">
+                        <div class="image-card">
+                            <img src="https://simplon.co/uploads/Site%20national/Home-site-national/fili%C3%A8res/Simplon-formations_IA.jpg"
+                                alt="">
+                        </div>
+                        <div class="typo-card p-4 typo" id="typo">
+                            <h5>​​​​​​​Cloud ​et Devops</h5>
+                            <p>​​​​​​​Le métier de Devops est de plus en plus indispensable dans le monde du numérique.
+                                Vous souhaitez développer
+                                ​​​​​​​vos compétences en ​​​​​​​Cloud et Devops ?</p>
+                            <div class="bouton-card">
+                                <button id="btn-card" class="btn-card"><i class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                        class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                    <a href="../dev-front/dev-front.html"><span id="cta" class="cta">DECOUVRIR NOS
+                                            FORMATIONS</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offre-formations">
+            <div class="pre-section">
+                <h4 class="title-section">​​​​​​​Nos formations en partenariat</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <section class="section-metiers container-fluid">
+                <div class="row">
+                    <div class="col-metiers col-12 col-lg-4 col-sm-12 col-md-6 p-3">
+                        <div class="metiers-items d-flex">
+                            <div class="mi-left">
+                                <h5>Formation Apple Foundation Program</h5>
+                                <p>Initiez-vous avec Simplon et Apple à la conception d'une application mobile. Pour
+                                    ajouter une corde à votre arc de
+                                    développeur-se, ou pour entamer un parcours dans le numérique, l'Apple Foundation
+                                    Program est accessible aux débutants
+                                    comme aux plus confirmés.</p>
+                                <div class="bouton-card">
+                                    <div class="bouton-card">
+                                        <button id="btn-card" class="btn-card btn-card-dup"><i
+                                                class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                                class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                            <a href="../dev-front/dev-front.html"><span id="cta"
+                                                    class="cta cta-dup">DECOUVRIR</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mi-right">
+                                <div class="img-part-1">
+                                    <img src="https://o.remove.bg/downloads/65fe34e3-8fea-4634-847a-7f2e8a4afbd8/images-removebg-preview.png"
+                                        alt="">
+                                </div>
+                                <div class="img-part-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-metiers col-12 col-lg-4 col-sm-12 col-md-6 p-3">
+                        <div class="metiers-items d-flex">
+                            <div class="mi-left">
+                                <h5>Formations Meta Académie</h5>
+                                <p>Un nouvel espace qui offre de nouvelles perspectives professionnelles.
+
+                                    Donnez un souffle nouveau à votre carrière professionnelle. Devenez avec Simplon et
+                                    Meta, Développeur-euse Réalité
+                                    Virtuelle /Réalité Augmentée - 3D temps réel, ou encore Technicien-ne d’Assistance
+                                    en Réalité Virtuelle.</p>
+                                <div class="bouton-card">
+                                    <div class="bouton-card">
+                                        <button id="btn-card" class="btn-card btn-card-dup"><i
+                                                class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                                class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                            <a href="../dev-front/dev-front.html"><span id="cta"
+                                                    class="cta cta-dup">DECOUVRIR</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mi-right">
+                                <div class="img-part-1">
+                                    <img src="https://o.remove.bg/downloads/65fe34e3-8fea-4634-847a-7f2e8a4afbd8/images-removebg-preview.png"
+                                        alt="">
+                                </div>
+                                <div class="img-part-2">
+                                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEigvYnq_eHjHHzCgf-wS3qX-vwqGYFHNl29J0xJvAEV6oT3lfqNaw_k42CWF26DUDachnCVO4xLpo8nPuJDmGZG-1gPXGfZU196b0FrwZ0gU23zQH0ySL0cmzARN3ilfM7uAfRKaK0Ams4twRDeJ3JP6ZFHEenQb9SoUHuRzQHOszAjpuV1mlT7RcwODQ=s16000"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-metiers col-12 col-lg-4 col-sm-12 col-md-6 p-3">
+                        <div class="metiers-items d-flex">
+                            <div class="mi-left">
+                                <h5>Formation Ecole IA Microsoft By Simplon</h5>
+                                <p>L'Intelligence Artificielle, le métier de développeur-se prend un nouveau virage.
+                                    Devenez un-e spécialiste du
+                                    développement d’applicatifs informatiques autour de l’IA et de la Data Science.
+                                    L’Ecole IA Microsoft By Simplon est
+                                    engagée en matière d’égalité des chances.</p>
+                                <div class="bouton-card">
+                                    <div class="bouton-card">
+                                        <button id="btn-card" class="btn-card btn-card-dup"><i
+                                                class="fa-solid fa-minus i-1" id="i-1"></i><i
+                                                class="fa-solid fa-chevron-right i-2" id="i-2"></i>
+                                            <a href="../dev-front/dev-front.html"><span id="cta"
+                                                    class="cta cta-dup">DECOUVRIR</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mi-right">
+                                <div class="img-part-1">
+                                    <img src="https://o.remove.bg/downloads/65fe34e3-8fea-4634-847a-7f2e8a4afbd8/images-removebg-preview.png"
+                                        alt="">
+                                </div>
+                                <div class="img-part-2">
+                                    <img src="https://news.microsoft.com/wp-content/uploads/prod/sites/113/2018/03/ecole-ia.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="temoignages">
+            <div class="pre-section">
+                <h4 class="title-section">Leurs témoignages</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tem-items col-12 col-sm-12 col-md-12 col-lg-4 p-4">
+                        <div
+                            class="tem-items-ele d-flex flex-column justify-content-center align-items-center gap-5 py-5 px-3 text-center">
+                            <div class="tem-img">
+                                <img src="https://www.cote-dopale.com/agenda-cote-d-opale/nausicaa-nouvelle-experience-2022-grand-large/4/3/3-full-fr-827145133.jpeg"
+                                    alt="" style="width: 140%;">
+                            </div>
+                            <p class="tem-text fst-italic fS-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, odio consectetur
+                                corporis temporibus distinctio provident est eaque obcaecati quidem molestiae, ipsum
+                                perspiciatis nam neque id tempora? Tempore, perferendis placeat.
+                            </p>
+                            <span>Marie Laure Coly</span>
+                            <button class="btn-temoignage"><a href="https://www.youtube.com/watch?v=-54bAUpbMvU"
+                                    style="color: white;">VOIR LA VIDEO</a></button>
+                        </div>
+                    </div>
+                    <div class="tem-items col-12 col-sm-12 col-md-12 col-lg-4 p-4">
+                        <div
+                            class="tem-items-ele d-flex flex-column justify-content-center align-items-center gap-5 py-5 px-3 text-center">
+                            <div class="tem-img">
+                                <img src="https://images.prismic.io/utopix-next-website/Mzk0NGJkOWEtY2ZlYS00MjVjLTkwNTAtOGY5OWQzN2IzNGVi_762cec57-2eaf-4eaf-9a0d-2e7860147e48_profilhomme7.jpg?ixlib=js-3.8.0&w=3840&auto=format&fit=max"
+                                    alt="">
+                            </div>
+                            <p class="tem-text fst-italic fS-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, odio consectetur
+                                corporis temporibus
+                                distinctio provident est eaque obcaecati quidem molestiae, ipsum perspiciatis nam neque
+                                id tempora? Tempore,
+                                perferendis placeat.
+                            </p>
+                            <span>Asane Diop</span>
+                            <button class="btn-temoignage"><a href="https://www.youtube.com/watch?v=-54bAUpbMvU"
+                                    style="color: white;">VOIR LA VIDEO</a></button>
+                        </div>
+                    </div>
+                    <div class="tem-items col-12 col-sm-12 col-md-12 col-lg-4 p-4">
+                        <div
+                            class="tem-items-ele tie-scale d-flex flex-column justify-content-center align-items-center gap-5 py-5 px-3 text-center">
+                            <div class="tem-img">
+                                <img src="https://cdn.pixabay.com/photo/2021/03/03/08/56/woman-6064819_1280.jpg" alt="">
+                            </div>
+                            <p class="tem-text fst-italic fS-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, odio consectetur
+                                corporis temporibus
+                                distinctio provident est eaque obcaecati quidem molestiae, ipsum perspiciatis nam neque
+                                id tempora? Tempore,
+                                perferendis placeat.
+                            </p>
+                            <span>Adama Sagna</span>
+                            <button class="btn-temoignage"><a href="https://www.youtube.com/watch?v=-54bAUpbMvU"
+                                    style="color: white;">VOIR LA VIDEO</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actualites">
+            <div class="actu-number">
+                <div class="pre-section">
+                    <h4 class="title-section">Nos actualités</h4>
+                    <div class="underline-title">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="actu-items">
+                                <div class="left-actu">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, eum dolorem. In,
+                                        aperiam
+                                        tempora.</p>
+                                    <div class="btn-component">
+                                        <button>S'INSCRIRE DES MAINTENANT</button>
+                                    </div>
+                                </div>
+                                <div class="right-actu">
+                                    <img src="images/actu-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="actu-items">
+                                <div class="left-actu">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, eum dolorem. In,
+                                        aperiam
+                                        tempora.</p>
+                                    <div class="btn-component">
+                                        <button>S'INSCRIRE DES MAINTENANT</button>
+                                    </div>
+                                </div>
+                                <div class="right-actu">
+                                    <img src="https://simplon.co/uploads/Site%20national/Home-site-national/fili%C3%A8res/Formations-nume%CC%81riques_Simplon.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="soutiens">
+            <div class="pre-section">
+                <h4 class="title-section">Nos soutiens</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <section class="logos">
+                <div class="logoContainer">
+                    <div class="slideLogo">
+
+                        <!-- Img Code -->
+                        <div class="slide">
+                            <img src="images/logo-apple.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/logo-orange.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/logo-sonatel-academie.jfif" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/logo-wave.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4f3.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="https://emoneyadvisor.com/wp-content/uploads/2023/06/eMoney-White-Logo-on-Dark-Blue.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://play-lh.googleusercontent.com/cqlKRC2uiOSxRClUJw7Oxn6Ub2Tpcf9C4cJraYDxF2s_FXhLfimZmAW1_nxZC8X9Ct8" />
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="https://play-lh.googleusercontent.com/W2VU4_nAGktxAYR04k84H6fTPQ6e9B3GVtAKBwoDINDwkpcSb3dLq3UVixdhvximcqA" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://img.freepik.com/vecteurs-libre/vecteur-degrade-logo-colore-oiseau_343694-1365.jpg" />
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="https://universidadesdemexico.mx/logos/original/logo-universidad-privada-del-sur-de-mexico.webp" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://yt3.googleusercontent.com/VtOA6d6XgNkURqC0bSJdvgDlscjDEGQgwjNmNHUfRfBQ6bi1Jy4TpM4sjrms6uF65uS2XQZ31ms=s900-c-k-c0x00ffffff-no-rj" />
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/43/Logo_%C3%89quipe_France_Football_2018.svg/1358px-Logo_%C3%89quipe_France_Football_2018.svg.png" />
+                        </div>
+                        <!-- Img Code End -->
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="partenaire">
+            <div class="pre-section">
+                <h4 class="title-section">Nos partenaires</h4>
+                <div class="underline-title">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <section class="logos">
+                <div class="logoContainer">
+                    <div class="slideLogo">
+
+                        <!-- Img Code -->
+                        <div class="slide">
+                            <img
+                                src="https://cdn5.f-cdn.com/contestentries/1093903/25344754/59884424e78aa_thumb900.jpg" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/58568d224f6ae202fedf2720.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://infominute.files.wordpress.com/2015/12/logo-intelcia-vector.jpg" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mangekyou_Sharingan_Itachi.svg/2048px-Mangekyou_Sharingan_Itachi.svg.png" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://cdn5.f-cdn.com/contestentries/1093903/25344754/59884424e78aa_thumb900.jpg" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/58568d224f6ae202fedf2720.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://infominute.files.wordpress.com/2015/12/logo-intelcia-vector.jpg" />
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" />
+                        </div>
+
+                        <div class="slide">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mangekyou_Sharingan_Itachi.svg/2048px-Mangekyou_Sharingan_Itachi.svg.png" />
+                        </div>
+                        <!-- Img Code End -->
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class=" text-center text-lg-start  text-muted ">
+            <!-- Section: Social media -->
+            <section class="antifaq container-fluid ">
+                <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="">Vous avez une question?</span><br>
+                            <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+
+                        </div>
+                        <div class="col-md-4 ms-auto  Inputbutton">
+                            <span>Inscrivez-vous a la newsletter</span><br>
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <section class="border">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row ">
+                        <!-- Grid column -->
+                        <div class="col-lg-8 ">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-6 ">
+                                    <h4 class="  mb-4 ">
+                                        Pages
+                                    </h4>
+                                    <ul class="foot-ul">
+                                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Devenir formateur</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Rejoindre notre equipe</a></li>
+
+                                        <li><a href="../blog/blog.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                </svg>Blog</a></li>
+
+                                        <li><a href="#"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Plan du site</a></li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                    <ul>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Presse</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Simplon foundation</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Accessibilite</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                        height="30" fill="currentColor" class="bi bi-dot"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>Mention legales</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="">
+                                <!-- Links -->
+                                <h4 class=" mb-4">Contact</h4>
+                                <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34
+                                    Avenue,Batiment D a
+                                    Grenoble </p>
+                                <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01
+                                    234 567 88
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                    Email:info@example.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <hr class="container traitfooter">
+            <div class="text-center border">
+                © Design par Groupe-1 .Tout droit reserve
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </section>
+    <!-- section footer -->
+    <!-- end footer -->
+    <script src="carte-1.js"></script>
+    <!-- progress -->
+    <!-- à mettre avant le header juste apres le body juste comme cela -->
+    <div id="progress">
+        <span id="progressValue"><i class="bi bi-arrow-up-square-fill"></i></span>
+    </div>
+    <!-- <header style="height: 70vh; background-color: #C30033;"></header> -->
+    <!-- <main style="height: 100vh; background-color: #F6F6F6;"></main> -->
+    <!-- <footer style="height: 50vh; background-color: beige;"></footer> -->
+
+    <!-- Modal edit formation -->
+    <div class="modal fade modal-xl" id="modifierFormation" tabindex="-1" aria-labelledby="modifierFormationLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center col-md-11" id="modifierFormationLabel">Modifier la formation
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="titreFormation" class="form-label">Titre de la formation</label>
+                            <input type="text" class="form-control" id="titreFormation"
+                                placeholder="Veuillez entrer le titre de la formation"
+                                required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="descriptionFormation" class="form-label">Description de la formation</label>
+                            <textarea class="form-control" placeholder="Veuillez entre la description de la formation"
+                                id="descriptionFormation" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Image de la formation</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-warning" type="submit" onclick="modifierFormation()"
+                                data-bs-dismiss="modal">Modifier la formation</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById('progress');
+            let scrolProgressValue = document.getElementById('progressValue');
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight)
+            if (pos > 10) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+
+            scrollProgress.addEventListener('click', () => {
+                document.documentElement.scrollTop = 0;
+            })
+
+            scrollProgress.style.background = `conic-gradient( #C30033 ${scrollValue}%, white ${scrollValue}%)`;
+        }
+        // Ajouter un seul gestionnaire d'événements
+        window.addEventListener('scroll', () => {
+            // navBarFixed();
+            calcScrollValue();
+        });
+
+        // Exécutez les fonctions une fois au chargement de la page
+        window.addEventListener('load', () => {
+            // navBarFixed();
+            calcScrollValue();
+        });
+    </script>
+
+    <script src="./acceuil.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+:root{
+    --rouge :#CE0033;
+    --bleu :#06114d8b;
+    --gris :#f6f6f6;
+}
+#header{
+    box-shadow: 0 2px 12px #06114d8b
+}
+/* debut css de la banniere */
+.cloud-banniere{
+    background-image: url(https://img.freepik.com/photos-gratuite/insigne-securite-internet-3d_1048-18106.jpg?size=626&ext=jpg&ga=GA1.1.359486737.1694125754&semt=ais);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+.cloud-banniere::before{
+    content: '';
+    background-color: #06114d54;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.cloud-banniere h4{
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    position: relative;
+    z-index: 2;
+}
+.cloud-banniere p{
+    color: white;
+    font-weight: bold;
+    /* font-size: 80px; */
+    position: absolute;
+    z-index: 2;
+    top: 330px;
+}
+.cloud-banniere p a{
+    color: white;
+}
+/* fin css baniere */
+
+/* debut css contenu */
+.cloud-text{
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid var(--rouge);
+    border-radius: 0 50px 0 50px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.cloud-text h4{
+    padding-top: 20px;
+    /* border: 2px solid var(--rouge); */
+
+}
+#descend{
+    margin-top: 22%;
+}
+.cloud-text p{
+   margin-top: -40px;
+    /* border: 2px solid black; */
+}
+.cloud-text img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 340px;
+    top: -55px;
+    /* border: 2px solid var(--rouge); */
+}
+.cloud-bouton{
+    background-color: var(--rouge);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.cloud-bouton:hover{
+    background-color: white;
+    color: var(--rouge);
+    border: 1px solid var(--rouge);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.cloud-carte{
+    margin: 50px auto;
+    text-align: center;
+}
+.cloud-carte h3{
+    text-align: left;
+}
+.cloud-carte-card .card img{
+    height: 300px;
+}
+.cloud-carte-card .card{
+    margin-bottom: 20px;
+}
+/* fin css contenu */
+
+/* début media queries */
+@media screen and (width <= 900px) {
+    .cloud-carte-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 20px auto;
+        align-items: center;
+    }
+    .cloud-text{
+        width: 80%;
+    }
+    .cloud-text img{
+        left: 270px;
+        top: -55px;
+    }
+    .cloud-carte{
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media screen and (width <= 390px) {
+    .cloud-carte-card{
+        width: 100%;
+        align-items: center;
+    }
+    .cloud-carte-card .card{
+        width: 100%;
+        align-items: center;
+    }
+    /* .cloud-text{
+        width: 100%;
+    } */
+    .cloud-text h2{
+        font-size: 20px;
+    }
+    .cloud-text img{
+        left: 160px;
+        top: -55px;
+    }
+}
+/* fin media queries */

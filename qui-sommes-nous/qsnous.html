@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="qsnous.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- début header -->
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+    <!-- <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <!-- <div class="dropdown me-1">
+                        <button type="button" class="menu-select " data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            
+                        </button>
+                    </div> 
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="#">Notre réseau de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="#">Développement d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a></li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="#">Personnes en situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="#">Nos actions pour les refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Former ses salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function() {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function() {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+        
+    </header> -->
+    <!-- fin header -->
+
+    <!-- debut contenu -->
+    <div class="qsnous">
+    <div class="qsnous-banniere">
+        <h1>Qui sommes nous</h1>
+        <p><span><a href="../accueil/accueil.html">Accueil</a> &nbsp;/</span><span> &nbsp; A propos &nbsp;/</span> <span> &nbsp; Qui Sommes-Nous</span></p>
+    </div>
+    <div class=" container qsnous-content">
+        <h4>Simplon.co</h4>
+        <div class="qsnous-line"></div>
+        <p>Nous sommes un réseau de fabriques numériques et inclusives en France et à l’étranger. Nous avons formé plus de 25 000 Simploniens et Simploniennes depuis 2013, dont 40% de femmes et 44% de personnes peu ou pas diplômées. Nous sommes une entreprise sociale et solidaire qui entend faire du numérique un véritable levier d’inclusion pour révéler des talents différents peu représentés dans le digital et les métiers techniques du numérique. Nous accompagnons les organisations pour que leur transformation digitale reste inclusive.
+            ​​​​​De manière indirecte, nous agissons également dans le domaine de la médiation numérique et de l'apprentissage du numérique créatif auprès des enfants</p>
+    </div>
+    <div class="container qsnous-content-1">
+        <h4>Notre Histoire</h4>
+        <div class="qsnous-line"></div>
+        <div class="qsnous-filter row">
+            <div class="col-4">
+              <div class="list-group qsnous-filt " id="list-tab" role="tablist">
+                <div>
+                    <a class="qsnous-edit list-group-item list-group-item-action active" id="qsnous-edit list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">2013</a>
+
+                </div>
+                <div>
+                    <a class="qsnous-edit list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">2014-2015</a>
+
+                </div>
+                <div>
+                    <a class="qsnous-edit list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">2015-1017</a>
+
+                </div>
+                <div>
+                    <a class="qsnous-edit list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">2018-2019</a>
+
+                </div>
+                <a class="qsnous-edit list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-setting" role="tab" aria-controls="list-setting">2020-2021</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    L’aventure de Simplon débute en 2013 avec Frédéric Bardeau, Andrei Vladescu-Olt et Erwan Kezzar. Inspirés par les premiers bootcamps qui fleurissent un peu partout dans la Silicon Valley, ils rêvent d’une version française plus inclusive et gratuite avec plus de femmes, et plus de recrues de milieux et de territoires différents. <br> <br>Le local de Montreuil est trouvé, loué et rapidement rafraîchi pour accueillir en octobre la première promotion de Simplon sur Ruby On Rails : 30 personnes ayant un projet d'application ou d'entreprise dont 50% de femmes de 18 à 52 ans, de Bac-15 à Bac+15 et des personnes provenant de 17 nationalités différentes.
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    Simplon se développe rapidement en dehors de Montreuil via un mécanisme de "franchise sociale" et des fabriques commencent à pousser dans les quartiers prioritaires et ruraux de France et à l'étranger (Roumanie, Afrique du Sud). Une première levée de fonds consolide le modèle et Simplon est autorisé à délivrer le Certificat de Qualification Professionnelle (CQP) « Développeur nouvelles technologies ». <br>À la même époque, Simplon développe ses activités avec la création de Simplon Prod, l’atelier solidaire de fabrication digitale, à destination des acteurs de l’ESS, et la Fondation Simplon, sa branche philanthropique abritée par Face reconnue d'utilité publique nait. Simplon est lauréat de la France s'Engage en 2014, fellow Ashoka et sélectionnée par EPIC en 2015.
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    Simplon devient le premier réseau de formation labellisées par l'Etat en France "Grande Ecole du Numérique" et se développe à l’international : la Belgique, le Liban, la Côte d’Ivoire. Simplon voit grand et organise une seconde levée de fonds. France Active (via France Active Investissement), la Caisse des Dépôts et Consignations (CDC en direct), Phitrust, INCO (Comptoir de l’innovation), Aviva, Crédit Coopératif (via ESFIN), Amundi et Mirova entrent au capital de Simplon. <br>Simplon prend un nouvel élan et double ses effectifs tous les ans, et son impact. Simplon Corp, sa division spécialisée dans la formation des salariés dont les métiers et les compétences sont fortement impactées par la transformation numérique, déploie ses projets dans les grands comptes. DigitESS nait à ce moment là pour accompagner la transition numérique des acteurs à impact positif.
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    Au moment de fêter ses 6 ans, Simplon.co lève 12 millions d’euros auprès de son pool d’investisseurs de l’Économie sociale et solidaire (ESS) afin de poursuivre la croissance de son impact social en France et à l’international. Ces deux dernières années, porté par le maintien d’un niveau très élevé des besoins en compétences dans le domaine du numérique, Simplon.co a multiplié par quatre son impact social et formé aux métiers du numérique plus de 5 600 personnes dans le monde avec un taux de sorties positives de 75% (6 mois après la formation). Le développement à l’international se poursuit. En 2019, Simplon.co compte 78 Fabriques dont 24 à l’étranger. Simplon Prod dépasse les 150 projets ESS réalisés et Simplon Corp le millier de salariés formés.
+                </div>
+                <div class="tab-pane fade" id="list-setting" role="tabpanel" aria-labelledby="list-setting-list">
+                    En 2020, Simplon poursuit le développement de son impact social dans un contexte de crise sanitaire inédit. Durant le confinement, les formations passent à distance, ce qui oblige à en repenser les modalités tout en maintenant une approche pédagogique active et inclusive, et un univers bienveillant pour minimiser les impacts de cette crise sur les activités de Simplon. Malgré un contexte difficile, Simplon dépasse en octobre 2020 la barre des 10 000 apprenants formés dans le monde, et fête ses 7 ans et demi entouré de ses partenaires et amis en décembre. 
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="container qsnous-content-2">
+        <h4>Nos engagements</h4>
+        <div class="qsnous-line"></div>
+        <div class="container qsnous-content-2-item">
+            <p class="container">Entreprise sociale agréée solidaire (ESUS) Simplon.co respecte des engagements forts en termes de lucrativité limitée, de gouvernance participative et d’écarts de salaires. Simplon.co soutient les associations, les porteurs de projets solidaires ou les ONG à se développer et à se digitaliser. <br> <br>Nous sommes aussi sociétaires de Sociétés Coopératives d’Intérêt Collectif (SCIC) porteuses de projets solidaires comme le label Emmaüs, la boutique en ligne du réseau Emmaüs, ou de la MedNum, la coopérative des acteurs de la médiation numérique qui oeuvre au quotidien pour une société numérique toujours plus inclusive.
+                ​​​​​​​ <br> <br>Notre écosystème ESS c’est aussi : EPIC Foundation (depuis 2015), Grande Ecole du Numérique dont nous sommes le plus grand réseau labellisé, Ashoka dont Simplon est membre depuis 2015, La France s’engage (lauréat 2014), le Mouves et France Eco Sociale Tech (FEST). 
+                ​​​​​​​Découvrez notre plaidoyer pour un numérique d’intérêt général.</p>
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+    </div>
+    <div class="container qsnous-content-3">
+        <h4>Découvrez simplon en video</h4>
+        <div class="qsnous-line"></div>
+        <div id="carouselExample" class="carousel slide my-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe width="716" height="403" src="https://www.youtube.com/embed/tLPsrWP9Y0Q" title="Découvrez le parcours Welcode en vidéo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="d-block w-100"></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe width="716" height="403" src="https://www.youtube.com/embed/0PeqnLq12V8" title="Zoom sur Simplon.co : la pédagogie chez Simplon.co" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="d-block w-100"></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe width="716" height="403" src="https://www.youtube.com/embed/NcCo3bIUmkU" title="Simplon.co : la vidéo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="d-block w-100"></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- debut footer -->
+        <footer class=" text-center text-lg-start  text-muted ">
+            <!-- Section: Social media -->
+            <section class="antifaq container-fluid ">
+                <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="">Vous avez une question?</span><br>
+                            <button type="button" class="btn btn-light btn-sm">CONSULTER NOTRE ANTI-FAQ</button>
+        
+                        </div>
+                        <div class="col-md-4 ms-auto  Inputbutton">
+                            <span>Inscrivez-vous a la newsletter</span><br>
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+            <!-- Section: Links  -->
+            <section class="border">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row ">
+                        <!-- Grid column -->
+                        <div class="col-lg-8 ">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-6 ">
+                                    <h4 class="  mb-4 ">
+                                        Pages
+                                    </h4>
+                                    <ul>
+                                        <li><a href="../devenir-formateur/formateur.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Devenir formateur</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Rejoindre notre equipe</a></li>
+                                        <li><a href=""><a href="../blog/blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Blog</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Plan du site</a></li>
+                                    
+                                    </ul>
+        
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                    <ul>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Presse</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Simplon foundation</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Accessibilite</a></li>
+                                        <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Mention legales</a></li>
+                                    </ul>
+        
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                
+                                
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                
+                            </div> -->
+        
+                        </div>
+                        
+                        <!-- Grid column -->
+        
+                        <!-- Grid column -->
+                        
+                        <!-- Grid column -->
+        
+                      
+        
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="">
+                                <!-- Links -->
+                                <h4 class=" mb-4">Contact</h4>
+                                <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34 Avenue,Batiment D a
+                                    Grenoble </p>
+                                <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88</p>
+                                <p>
+                                    <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                    Email:info@example.com
+                                </p>
+                            
+                            
+                            </div>
+        
+                        </div>
+                        
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <hr class="container traitfooter">
+            <div class="text-center border" >
+                © Design par Groupe-1 .Tout droit reserve
+                
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- fin footer -->
+</div>
+    <!-- fin contenu -->
+
+    
+</body>
+</html>

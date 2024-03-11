@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Lien booststrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fin favicon -->
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Fin bootstrap Icon -->
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fin fontawsome -->
+    <link rel="stylesheet" href="alternance.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">Accueil</a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="../réseau-de-fabrique/reseau-de-fabrique.html">Notre réseau
+                                    de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions
+                                    pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et
+                                    cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="../developpeur appication/dev.html">Développement
+                                    d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux
+                                    numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/alternance.html">Faire ma formation
+                                    en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions
+                                    pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="../hadicap/handicap.html">Personnes en
+                                    situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="../actions-ressortissants/actions.html">Nos actions pour les
+                                    refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../former-salariés/former-salarie.html">Former ses
+                                    salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function () {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function () {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+    
+    </header>
+    <!-- <header class="" id="header" class="">
+        <div class="header-top d-flex justify-content-between py-2">
+            <div class="section-left d-flex">
+                <div class="media-element"><i class="fa-brands fa-facebook"></i></div>
+                <div class="media-element"><i class="fa-brands fa-twitter"></i></div>
+                <div class="media-element"><i class="fa-brands fa-youtube"></i></div>
+                <div class="media-element"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+            <div class="section-right d-flex gap-2 align-items-center gap-4">
+                <div class="search-part">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Recherche"><label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+                <div class="search-alternate" id="search-alternate"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="lang d-flex gap-2">
+                    <span>EN</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom d-flex justify-content-between align-items-center py-1">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><img src="../public/logo/logo.png" alt=""></a>
+            </div>
+            <div class="menu d-flex">
+                <div class="nav-menu d-flex" id="nav-menu">
+                    <a href="../accueil/accueil.html" style="color: black;">
+                        Accueil
+                    </a>
+                    <div class="nav-lit dropdown me-1">
+                        <button type="button" class="menu-select  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            A Propos
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../qui-sommes-nous/qsnous.html">Qui sommes nous ?</a></li>
+                            <li><a class="dropdown-item" href="../pedagogie/pedagogie.html">Notre pédagogie</a></li>
+                            <li><a class="dropdown-item" href="#">Notre réseau de fabriques</a></li>
+                            <li><a class="dropdown-item" href="../numerique-inclusif/numeriqueInclusif.html">Nos actions pour un numérique inclusif</a></li>
+                            <li><a class="dropdown-item" href="../anti-faq/antifaq.html">Anti-FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Nos Formations
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../infrastructure-cuberscurite/infraCyber.html">Infrastructures et cybersécurité</a></li>
+                            <li><a class="dropdown-item" href="#">Développement d'applications</a></li>
+                            <li><a class="dropdown-item" href="../fondamentaux-numerique/fondamentaux-num.html">Fondamentaux numériques</a></li>
+                            <li><a class="dropdown-item" href="../cloud-devops/cloud.html">Cloud & Devops</a></li>
+                            <li><a class="dropdown-item" href="../Data-IA/dataIa.html">Data & intelligence artificielle</a></li>
+                            <li><a class="dropdown-item" href="../metavers/metaverse.html">Métavers & XR</a></li>
+                            <li><a class="dropdown-item" href="../blockchain/blockchain.html">Blockchain</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Alternances
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../formation-alternance/">Faire ma formation en alternance</a></li>
+                            <li><a class="dropdown-item" href="#">Recruter en alternance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Candidats
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="../nos-actions-pour-les-femmes/actionfemme.html">Nos actions pour les femmes</a></li>
+                            <li><a class="dropdown-item" href="#">Personnes en situation de handicap</a></li>
+                            <li><a class="dropdown-item" href="#">Nos actions pour les refugés étrangers</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown me-1">
+                        <button type="button" class="menu-select dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            data-bs-offset="10,20">
+                            Entreprises
+                        </button>
+                        <ul class="sous-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Former ses salariés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hide-menu" id="hide-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile" id="search-mobile">
+            <form action="">
+                <input type="text" placeholder="Entrez votre texte">
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+        <script>
+            let navMenu = document.getElementById('nav-menu');
+            let burgerMenu = document.getElementById('burger-menu');
+            let hideMenu = document.getElementById('hide-menu');
+
+            hideMenu.style.display = 'none'
+
+            burgerMenu.addEventListener('click', function() {
+                navMenu.style.left = '0';
+                hideMenu.style.display = 'block';
+                burgerMenu.style.display = 'none';
+            });
+            hideMenu.addEventListener('click', function () {
+                navMenu.style.left = '200%';
+                hideMenu.style.display = 'none';
+                burgerMenu.style.display = 'block';
+            })
+
+            let searchMobile = document.getElementById('search-alternate');
+            let barreSearch = document.getElementById('search-mobile');
+
+            searchMobile.addEventListener('click', function() {
+                barreSearch.style.top = '40vh';
+            });
+        </script>
+        
+    </header> -->
+    <section class="alternance">
+        <!-- --début bannière-- -->
+        <div class="alternance-banniere">
+            <h1>Formation en alternance</h1>
+            <p><span><a href="../accueil/accueil.html">Accueil</a> &nbsp;/</span><span> &nbsp;<a href="#">Alternance</a></span></p>
+        </div>
+        <div class="alternance-banniere-carte">
+            <div class="alternance-banniere-carte-item">
+                <h2>25.000</h2>
+                <p>apprenants <br>formés depuis <br>2013</p>
+            </div>
+            <div class="alternance-banniere-carte-item">
+                <h2>30</h2>
+                <p>formations en <br>alternance</p>
+            </div>
+            <div class="alternance-banniere-carte-item">
+                <h2>123</h2>
+                <p>écoles en France <br>et à l'international<br>2013</p>
+            </div>
+            <div class="alternance-banniere-carte-item">
+                <h2>69</h2>
+                <p>sorties positives<br>2013</p>
+            </div>
+        </div>
+         <!-- --fin bannière-- -->
+
+         <!-- --debut contenu-- -->
+        <div class="alternance-titre" ><h2>AVEC NOS FORMATIONS EN ALTERNANCE</h2></div>
+        <div class="alternance-content">
+            <div class="alternance-content-left">
+                <h3>FAITES EVOLUER VOTRE CARRIERE</h3>
+                <hr>
+                <p>
+                    Vous souhaitez faire évoluer votre carrière professionnelle en <br>vous formant à un métier du numérique ? Découvrez une de nos <br>30 formations en alternance.
+                    À distance ou en présentiel, nos <br>formations allient théorie et pratique pour vous permettre <br>de monter rapidement en compétences.</p>
+                <button><a href="#alternance-content-two" style="color: white;">Trouver ma formation</a></button>
+            </div>
+            <div class="alternance-content-right">
+                <div class="alternance-titre-right" ><p>AVEC NOS FORMATIONS EN ALTERNANCE</p></div>
+                <div class="alternance-content-rightt">
+                    <div class="alternance-content-right-items">
+                        <i class="fas fa-graduation-cap" style="color: #ce0033;"></i>
+                        <p>Formation diplômantes et certifiantes</p>
+                    </div>
+                    <div class="alternance-content-right-items">
+                        <i class="far fa-hourglass" style="color: #ce0033;"></i>
+                        <p>Durée : 12 à 24 mois selon la formation</p>
+                    </div>
+                    <div class="alternance-content-right-items">
+                        <i class="fas fa-map-marker-alt" style="color: #ce0033;"></i>
+                        <p>Localisation : Cours en présentiel (50 villes <br>en France) ou 100% distanciel</p>
+                    </div>
+                    <div class="alternance-content-right-items">
+                        <i class="far fa-user" style="color: #ce0033;"></i>
+                        <p>Admission sur entretien</p>
+                    </div>
+                    <hr>
+                    <div class="alternance-content-right-button">
+                    <button>Je candidate</button>
+                    </div>
+                    <div class="alternance-content-right-button">
+                        <button>Découvrir la pédagogie</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alternance-content-two" id="alternance-content-two">
+            <h3>Découvrez toutes nos formations en alternance</h3>
+            <div class="d-flex justify-content-center gap-4 p-2" id="alternance-content-two-carte">
+                <div class="card alternance-content-two-item" style="width: 33rem;">
+                    <img src="https://campagne.simplon.co/hubfs/Photos%20Free%20apprenants/11.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="bdy-alternance">
+                      <h5 class="card-title">ADMINISTRATEUR D'INFRASTRUCTURES SECURISEES DEVOPS</h5>
+                      <p class="card-text">L'administrateur d'infrastructures sécurisées s’occupe des infrastructures informatiques dont il assure l'installation, la sécurisation...</p>
+                      <div class="alternance-card-item">
+                      <div>
+                        <p><span><i class="fa-solid fa-calendar-days" style="color: #ce0033;"></i></span><span>Rentrées tout au long de l'année</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-user" style="color: #ce0033;"></i></span><span>Distanciel & Présentiel</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-clock" style="color: #ce0033;"></i></span><span>12-24 Mois</span></p>
+                      </div>
+                    </div>
+                      <a href="#" class="btn btn-primary">Postuler</a>
+                    <p class="alternance-content-two-badge">INFRASTRUCTURES ET CYBERSECURITE</p>
+                    </div>
+                </div>
+                <div class="card alternance-content-two-item" style="width: 33rem;">
+                    <img src="https://campagne.simplon.co/hubfs/Photos%20Free%20apprenants/9.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="bdy-alternance">
+                      <h5 class="card-title">Concepteur-rice Développeur-se en environnement DevOps</h5>
+                      <p class="card-text">Le Concepteur Développeur d'Applications est un professionnel qui analyse les besoins d'un client, les traduit en exigences fonctionnelles et...</p>
+                      <div>
+                        <p><span><i class="fa-solid fa-calendar-days" style="color: #ce0033;"></i></span><span>Rentrées tout au long de l'année</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-user" style="color: #ce0033;"></i></span><span>Distanciel & Présentiel</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-clock" style="color: #ce0033;"></i></span><span>12-24 Mois</span></p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Postuler</a>
+                    <p class="alternance-content-two-badge">DEVELOPPEMENT D'APPLICATION</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="d-flex justify-content-center gap-4 p-2" id="alternance-content-two-carte">
+                <div class="card alternance-content-two-item" style="width: 33rem;">
+                    <img src="https://campagne.simplon.co/hubfs/Photos%20Free%20apprenants/5-1.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="bdy-alternance">
+                      <h5 class="card-title">TECHNICIEN-NE SUPERIEUR-E SYSTEME ET RESEAUX</h5>
+                      <p class="card-text">Le technicien supérieur systèmes et réseaux participe à la mise en service et au maintien en condition opérationnelle de l’infrastructure informatique. </p>
+                      <div class="alternance-card-item">
+                      <div>
+                        <p><span><i class="fa-solid fa-calendar-days" style="color: #ce0033;"></i></span><span>Rentrées tout au long de l'année</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-user" style="color: #ce0033;"></i></span><span>Distanciel & Présentiel</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-clock" style="color: #ce0033;"></i></span><span>12-24 Mois</span></p>
+                      </div>
+                    </div>
+                      <a href="#" class="btn btn-primary">Postuler</a>
+                    <p class="alternance-content-two-badge">INFRASTRUCTURES ET CYBERSECURITE</p>
+                    </div>
+                </div>
+                <div class="card alternance-content-two-item" style="width: 33rem;">
+                    <img src="https://campagne.simplon.co/hubfs/Photos%20Free%20apprenants/2.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="bdy-alternance">
+                      <h5 class="card-title">PARCOURS DEVELOPPEUR EN INTELLIGENCE ARTIFICIELLE</h5>
+                      <p class="card-text">L'IA est en réalité une discipline qui réunit des sciences, théories et techniques Le métier de développeur en IA prend une importance croissante dans les nouveaux métiers de la data et l’IA puisqu'il..</p>
+                      <div>
+                        <p><span><i class="fa-solid fa-calendar-days" style="color: #ce0033;"></i></span><span>Rentrées tout au long de l'année</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-user" style="color: #ce0033;"></i></span><span>Distanciel & Présentiel</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-clock" style="color: #ce0033;"></i></span><span>12-24 Mois</span></p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Postuler</a>
+                    <p class="alternance-content-two-badge">INTELLIGENCE ARTIFICIELLE</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="d-flex justify-content-center gap-4 p-2" id="alternance-content-two-carte">
+                <div class="card alternance-content-two-item" style="width: 33rem;">
+                    <img src="https://campagne.simplon.co/hubfs/Photos%20Free%20apprenants/4.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="bdy-alternance">
+                      <h5 class="card-title">PARCOURS ADMISNISTRATEUR-RICE CLOUD</h5>
+                      <p class="card-text">Le parcours Administrateur-trice Cloud est une formation qui permet d'acquérir les compétences nécessaires pour administrer et garantir l'administration, la mise en place et l'exploitation des infrastructures Cloud...</p>
+                      <div class="alternance-card-item">
+                      <div>
+                        <p><span><i class="fa-solid fa-calendar-days" style="color: #ce0033;"></i></span><span>Rentrées tout au long de l'année</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-user" style="color: #ce0033;"></i></span><span>Distanciel & Présentiel</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-clock" style="color: #ce0033;"></i></span><span>12-24 Mois</span></p>
+                      </div>
+                    </div>
+                      <a href="#" class="btn btn-primary">Postuler</a>
+                    <p class="alternance-content-two-badge">CLOUD</p>
+                    </div>
+                </div>
+                <div class="card alternance-content-two-item" style="width: 33rem;">
+                    <img src="https://campagne.simplon.co/hubfs/Photos%20Free%20apprenants/11.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="bdy-alternance">
+                      <h5 class="card-title">OPERATEUR-RICE DE SOLUTIONS DE SECURITE CLOUD ET HYBRIDE</h5>
+                      <p class="card-text">Le Concepteur Développeur d'Applications est un professionnel qui analyse les besoins d'un client, les traduit en exigences fonctionnelles et...</p>
+                      <div>
+                        <p><span><i class="fa-solid fa-calendar-days" style="color: #ce0033;"></i></span><span>Rentrées tout au long de l'année</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-user" style="color: #ce0033;"></i></span><span>Distanciel & Présentiel</span></p>
+                      </div>
+                      <div>
+                        <p><span><i class="fa-regular fa-clock" style="color: #ce0033;"></i></span><span>12-24 Mois</span></p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Postuler</a>
+                    <p class="alternance-content-two-badge">CLOUD</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="alternance-content-three">
+            <h3>Comment s'inscrire à nos formations en alternance ?</h3>
+            <div class="alternance-content-three-item">
+                <div class="alternance-content-three-items">
+                    <p class="alternance-number">1</p>
+                    <p>Vous y êtes ! <br>Trouvez votre <br>formation en <br>alternance et <br><a href="https://simplon.co/je-candidate?hsLang=fr-fr#alternance=.alternance">candidatez</a></p>
+                </div>
+                <div class="alternance-content-three-items">
+                    <p class="alternance-number">2</p>
+                    <p>Insription et<br>admission sans<br>prérequis de <br>diplôme <br></p>
+                </div>
+                <div class="alternance-content-three-items">
+                    <p class="alternance-number">3</p>
+                    <p>Inscription au <br><a href="https://campagne.simplon.co/fr/formez-vous-avec-simplon">Starter Program</a><br>pour trouver une<br>alternance<br></p>
+                </div>
+                <div class="alternance-content-three-items">
+                    <p class="alternance-number">4</p>
+                    <p>Vous trouvez votre<br>alternance et vous<br>démarrez votre<br>formation<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- section footer -->
+        <footer class=" text-center text-lg-start  text-muted ">
+            <!-- Section: Social media -->
+            <section class="antifaq container-fluid ">
+                <div class="container  d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="">Vous avez une question?</span><br>
+                            <button type="button" class="btn btn-light btn-sm" id="Bouton">CONSULTER NOTRE ANTI-FAQ</button>
+    
+                        </div>
+                        <div class="col-md-4 ms-auto  Inputbutton">
+                            <span>Inscrivez-vous a la newsletter</span><br>
+                            <input type="email" placeholder="Enter votre email" class="inputEmail shadow ">
+                            <button type="button" class="btnInscrire  shadow ">S'INSCRIRE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+            <!-- Section: Links  -->
+            <section class="border">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row ">
+                        <!-- Grid column -->
+                        <div class="col-lg-8 ">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-6 ">
+                                    <h4 class="  mb-4 ">
+                                        Pages
+                                    </h4>
+                                    <ul>
+                                        <li><a href="../devenir-formateur/formateur.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                        </svg>Devenir formateur</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Rejoindre notre equipe</a></li>
+                                        <li><a href=""><a href="../blog/blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Blog</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Plan du site</a></li>
+                                    
+                                    </ul>
+    
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                                    <ul>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Presse</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Simplon foundation</a></li>
+                                        <li><a href=""><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Accessibilite</a></li>
+                                        <li><a href=""><a href="../mentions-légales/metionlegale.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>Mention legales</a></li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                
+                                
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                
+                            </div> -->
+    
+                        </div>
+                        
+                        <!-- Grid column -->
+        
+                        <!-- Grid column -->
+                        
+                        <!-- Grid column -->
+    
+                      
+        
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="">
+                                <!-- Links -->
+                                <h4 class=" mb-4">Contact</h4>
+                                <p><i class="fa-solid fa-location-dot fa-sm" style="color:var(--rouge);"></i> Adresse:34 Avenue,Batiment D a
+                                    Grenoble </p>
+                                <p><i class="fas fa-phone fa-sm me-3" style="color:var(--rouge);"></i>telephone: + 01 234 567 88</p>
+                                <p>
+                                    <i class="fas fa-envelope fa-sm me-3" style="color:var(--rouge);"></i>
+                                    Email:info@example.com
+                                </p>
+                            
+                            
+                            </div>
+    
+                        </div>
+                        
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <hr class="container traitfooter">
+            <div class="text-center border" >
+                © Design par Groupe-1 .Tout droit reserve
+                
+            </div>
+            <!-- Copyright -->
+        </footer>
+        
+        <!-- end footer -->
+</body>
+</html>
